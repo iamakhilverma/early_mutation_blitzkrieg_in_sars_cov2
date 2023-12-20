@@ -1,0 +1,4 @@
+"","aa_subs","collection_date","accession_id","location","counts","region","mutation_name","fraction","per_abundance","ref","pos","alt","continent","country","state","city"
+"NS3_ins104P","NS3_ins104P",2020-01-25,"EPI_ISL_17116757","North America/USA/West Virginia",26716,"NS3","ins104P",0.00230129435317185,0.230129435317185,"ins",104,"P","North America","USA","West Virginia",NA
+"Spike_ins214EPE","Spike_ins214EPE",2020-05-30,"EPI_ISL_13597467","North America/USA/Minnesota/Stearns County",1522543,"Spike","ins214EPE",0.131150606691171,13.1150606691171,"ins",214,"EPE","North America","USA","Minnesota","Stearns County"
+"Spike_ins214XXX","Spike_ins214XXX",2021-01-27,"EPI_ISL_12565446","North America/USA/Arizona/Coconino County",62968,"Spike","ins214XXX",0.00542401193406666,0.542401193406666,"ins",214,"XXX","North America","USA","Arizona","Coconino County"

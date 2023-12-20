@@ -1,0 +1,92 @@
+"","continent","country","state","city","n"
+"1","North America","USA","Oklahoma","Oklahoma City",18
+"2","Europe","France","Grand Est",NA,13
+"3","Europe","Spain","Castilla y Leon",NA,12
+"4","North America","USA","New York","Westchester County",10
+"5","Asia","India",NA,NA,8
+"6","North America","USA","Montana","Yellowstone",8
+"7","Asia","China","Hubei","Wuhan",5
+"8","Europe","United Kingdom","England",NA,5
+"9","North America","USA","Minnesota","Stearns County",5
+"10","North America","Canada","Quebec",NA,4
+"11","South America","Argentina","Buenos Aires","Exaltación de la Cruz",4
+"12","Asia","China","Anhui","Hefei",3
+"13","North America","USA","New York",NA,3
+"14","Africa","Morocco","Rabat",NA,2
+"15","Africa","Niger","Niamey",NA,2
+"16","Africa","South Africa","Gauteng",NA,2
+"17","Asia","India","Uttar Pradesh",NA,2
+"18","Asia","Japan","Tokyo",NA,2
+"19","Asia","Lebanon",NA,NA,2
+"20","Europe","Denmark","Midtjylland",NA,2
+"21","Europe","France","Bretagne","Brest",2
+"22","Europe","Slovakia","Ilava",NA,2
+"23","North America","USA","Arizona",NA,2
+"24","North America","USA","California","San Diego",2
+"25","North America","USA","Florida",NA,2
+"26","North America","USA","Iowa",NA,2
+"27","North America","USA","Minnesota","Kandiyohi County",2
+"28","Africa","Democratic Republic of the Congo","Sud Kivu",NA,1
+"29","Africa","Morocco","Casablanca",NA,1
+"30","Africa","Senegal","Dakar",NA,1
+"31","Africa","Sierra Leone",NA,NA,1
+"32","Africa","Zambia","Choma","Macha",1
+"33","Asia","China","Guangdong","Dongguan",1
+"34","Asia","China","Guangdong",NA,1
+"35","Asia","China","Guangxi","Nanning",1
+"36","Asia","China","Jiangxi","Fuzhou",1
+"37","Asia","China","Jiangxi","Shangrao",1
+"38","Asia","China","Shanghai",NA,1
+"39","Asia","China","Sichuan",NA,1
+"40","Asia","China","Yunnan",NA,1
+"41","Asia","Hong Kong",NA,NA,1
+"42","Asia","India","Gujarat","Gandhinagar",1
+"43","Asia","India","Himachal Pradesh",NA,1
+"44","Asia","Japan","Fukuoka",NA,1
+"45","Asia","Saudi Arabia",NA,NA,1
+"46","Asia","United Arab Emirates",NA,NA,1
+"47","Europe","Belgium","Beveren-Waas",NA,1
+"48","Europe","Canary Islands",NA,NA,1
+"49","Europe","France","Normandie",NA,1
+"50","Europe","France","Occitanie","Nimes",1
+"51","Europe","France","Provence-Alpes-Cote d'Azur","Nice",1
+"52","Europe","Germany","Baden-Wurttemberg","Freiburg",1
+"53","Europe","Germany","Hamburg",NA,1
+"54","Europe","Germany","North Rhine-Westphalia",NA,1
+"55","Europe","Ireland","Dublin",NA,1
+"56","Europe","Ireland","Limerick",NA,1
+"57","Europe","Ireland","Longford",NA,1
+"58","Europe","Italy","Lombardy",NA,1
+"59","Europe","Lithuania","Marijampoles apskritis",NA,1
+"60","Europe","Norway","Oslo",NA,1
+"61","Europe","Norway","Viken",NA,1
+"62","Europe","Norway",NA,NA,1
+"63","Europe","Spain","Comunitat Valenciana","Alicante",1
+"64","Europe","Spain","La Rioja",NA,1
+"65","Europe","Spain","Madrid","Madrid",1
+"66","Europe","Spain","Madrid",NA,1
+"67","Europe","Sweden","Stockholm",NA,1
+"68","Europe","Switzerland","Aargau",NA,1
+"69","Europe","Switzerland","Vaud",NA,1
+"70","North America","Canada","Alberta",NA,1
+"71","North America","Canada","British Columbia",NA,1
+"72","North America","Costa Rica","Alajuela",NA,1
+"73","North America","Haiti","OST",NA,1
+"74","North America","Mexico","Morelos",NA,1
+"75","North America","USA","California",NA,1
+"76","North America","USA","Illinois",NA,1
+"77","North America","USA","Indiana",NA,1
+"78","North America","USA","Maryland",NA,1
+"79","North America","USA","Massachusetts",NA,1
+"80","North America","USA","Michigan",NA,1
+"81","North America","USA","Montana","Lewis And Clark",1
+"82","North America","USA","New York","Brooklyn",1
+"83","North America","USA","Ohio","Franklin County",1
+"84","North America","USA","Utah",NA,1
+"85","North America","USA","Washington","King County",1
+"86","North America","USA","Washington",NA,1
+"87","Oceania","Australia","South Australia",NA,1
+"88","Oceania","Australia","Victoria",NA,1
+"89","South America","Brazil","Sao Paulo","Juquia",1
+"90","South America","Brazil","Sao Paulo","Sao Jose dos Campos",1
+"91","South America","Brazil","Sao Paulo",NA,1

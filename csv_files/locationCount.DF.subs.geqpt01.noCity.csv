@@ -1,0 +1,562 @@
+"","continent","country","state","n"
+"1","Europe","United Kingdom","England",635
+"2","North America","USA","New York",186
+"3","North America","USA","Texas",169
+"4","North America","USA","California",163
+"5","North America","USA","Washington",136
+"6","Europe","United Kingdom","Scotland",102
+"7","North America","Canada","Quebec",92
+"8","North America","USA","Maryland",86
+"9","North America","USA","Minnesota",66
+"10","North America","USA","Michigan",63
+"11","Europe","Italy","Lombardy",62
+"12","Europe","United Kingdom","Wales",55
+"13","Asia","China","Hubei",54
+"14","Europe","Portugal",NA,53
+"15","Oceania","Australia","Victoria",49
+"16","Asia","China","Anhui",48
+"17","North America","USA","Utah",48
+"18","Europe","Spain","Comunitat Valenciana",47
+"19","North America","USA","Florida",47
+"20","North America","USA","Arizona",45
+"21","Europe","France","Auvergne-Rhone-Alpes",42
+"22","North America","USA","Illinois",42
+"23","Europe","Italy","Veneto",41
+"24","Asia","China","Shanghai",39
+"25","Europe","France","Provence-Alpes-Cote d'Azur",39
+"26","Europe","France","Ile-de-France",38
+"27","Africa","Morocco","Rabat",37
+"28","Asia","Lebanon",NA,37
+"29","Europe","Iceland","Reykjavik",37
+"30","Asia","Hong Kong",NA,36
+"31","Europe","Spain","Madrid",36
+"32","Europe","Sweden","Stockholm",36
+"33","Asia","India","Chhattisgarh",35
+"34","Asia","India",NA,35
+"35","Europe","Spain","Andalusia",35
+"36","Asia","Singapore",NA,34
+"37","Europe","Germany","North Rhine-Westphalia",34
+"38","North America","USA","Idaho",34
+"39","Europe","Germany","Hamburg",31
+"40","South America","Brazil","Sao Paulo",31
+"41","Asia","China","Guangdong",30
+"42","Asia","India","Maharashtra",29
+"43","North America","USA","Colorado",29
+"44","North America","USA","Massachusetts",29
+"45","Europe","Switzerland","Vaud",27
+"46","North America","USA","Iowa",27
+"47","Europe","Denmark",NA,26
+"48","Europe","Netherlands",NA,25
+"49","Europe","Spain","Navarra",25
+"50","Asia","China","Shandong",24
+"51","Asia","South Korea",NA,24
+"52","Europe","Spain","Basque Country",24
+"53","Asia","China","Sichuan",21
+"54","Europe","Ireland","Dublin",21
+"55","North America","Canada","Ontario",21
+"56","North America","USA","Oregon",21
+"57","North America","USA","Wisconsin",21
+"58","Oceania","Australia","New South Wales",21
+"59","Asia","Japan",NA,20
+"60","Europe","Spain","Castilla y Leon",20
+"61","North America","USA","Oklahoma",20
+"62","Africa","Egypt",NA,19
+"63","Oceania","Australia","South Australia",18
+"64","Asia","Israel","Kfar Saba",17
+"65","Europe","France","Grand Est",17
+"66","Europe","Germany","Baden-Wurttemberg",17
+"67","Europe","Germany","Bavaria",17
+"68","Asia","Qatar","Doha",16
+"69","Europe","Denmark","Hovedstaden",16
+"70","Europe","Denmark","Sjaelland",16
+"71","Europe","Spain","Catalunya",16
+"72","Oceania","Australia","Queensland",16
+"73","Africa","Senegal","Dakar",15
+"74","Europe","Luxembourg",NA,15
+"75","Europe","Netherlands","Zuid-Holland",15
+"76","North America","Canada","Alberta",15
+"77","North America","USA","Nevada",15
+"78","South America","Peru","Lima",15
+"79","Asia","Saudi Arabia",NA,14
+"80","North America","USA","Connecticut",14
+"81","North America","USA","Georgia",14
+"82","North America","USA","Louisiana",14
+"83","Asia","China","Beijing",13
+"84","Asia","China","Henan",13
+"85","Asia","United Arab Emirates","Abu Dhabi",13
+"86","Europe","France","Hauts-de-France",13
+"87","Europe","Spain","La Rioja",13
+"88","North America","USA","Montana",13
+"89","Asia","Japan","Saitama",12
+"90","Europe","Italy","Campania",12
+"91","Europe","Norway","Oslo",12
+"92","Europe","United Kingdom","Northern Ireland",12
+"93","North America","USA","Ohio",12
+"94","South America","Argentina","Buenos Aires",12
+"95","South America","Brazil","Rio de Janeiro",12
+"96","Africa","Sierra Leone",NA,11
+"97","Asia","China","Jiangxi",11
+"98","Asia","Japan","Kanto",11
+"99","Asia","United Arab Emirates",NA,11
+"100","Europe","France","Occitanie",11
+"101","Europe","Netherlands","Noord-Brabant",11
+"102","Europe","Netherlands","Utrecht",11
+"103","Europe","Slovenia",NA,11
+"104","North America","USA","Indiana",11
+"105","North America","USA","Virginia",11
+"106","Asia","India","Telangana",10
+"107","Asia","Japan","Hokkaido",10
+"108","Asia","Japan","Kanagawa",10
+"109","Europe","Belgium","Liège",10
+"110","North America","Mexico","Mexico City",10
+"111","North America","USA","New Jersey",10
+"112","North America","USA","Tennessee",10
+"113","North America","USA","Wyoming",10
+"114","North America","USA",NA,10
+"115","Africa","Niger","Niamey",9
+"116","Asia","India","Delhi",9
+"117","Europe","Finland","Uusimaa",9
+"118","Europe","Netherlands","Noord-Holland",9
+"119","Europe","Spain","Galicia",9
+"120","North America","Canada","British Columbia",9
+"121","Africa","Gambia","West Coast Region",8
+"122","Africa","South Africa","KwaZulu-Natal",8
+"123","Africa","Zambia","Choma",8
+"124","Asia","Thailand","Bangkok",8
+"125","Europe","Belgium","Ghent",8
+"126","Europe","Canary Islands",NA,8
+"127","Europe","Greece","Athens",8
+"128","Europe","Italy","Emilia-Romagna",8
+"129","Europe","Italy","Trentino-Alto Adige",8
+"130","Europe","Netherlands","Gelderland",8
+"131","Europe","Spain","Aragon",8
+"132","Europe","Sweden","Vastra Gotaland",8
+"133","Europe","Switzerland","Bern",8
+"134","North America","USA","New Mexico",8
+"135","Oceania","New Zealand","Canterbury",8
+"136","Asia","China","Guangxi",7
+"137","Asia","Iran","Tehran",7
+"138","Asia","Mongolia",NA,7
+"139","Asia","Saudi Arabia","Makkah",7
+"140","Europe","Austria","Innsbruck",7
+"141","Europe","Austria",NA,7
+"142","Europe","Belgium","Brussels",7
+"143","Europe","Denmark","Nordjylland",7
+"144","Europe","France","Bretagne",7
+"145","Europe","Germany","Berlin",7
+"146","Europe","Germany","Saarland",7
+"147","North America","USA","Missouri",7
+"148","South America","Chile","Region Metropolitana de Santiago",7
+"149","Asia","China","Zhejiang",6
+"150","Asia","India","Uttar Pradesh",6
+"151","Europe","Ireland","Limerick",6
+"152","Europe","Italy","Apulia",6
+"153","Europe","Norway","Viken",6
+"154","Europe","Spain","Balearic Islands",6
+"155","North America","Canada","Manitoba",6
+"156","North America","USA","Delaware",6
+"157","North America","USA","Nebraska",6
+"158","Africa","South Africa","Gauteng",5
+"159","Africa","South Africa","Western Cape",5
+"160","Asia","China","Yunnan",5
+"161","Asia","India","Andhra Pradesh",5
+"162","Asia","India","Tamil Nadu",5
+"163","Asia","India","West Bengal",5
+"164","Asia","Iran","Isfahan",5
+"165","Asia","Lebanon","Beirut",5
+"166","Asia","Oman","Muscat",5
+"167","Asia","Thailand",NA,5
+"168","Europe","Belgium","Hoboken",5
+"169","Europe","Belgium","Liege",5
+"170","Europe","Czech Republic",NA,5
+"171","Europe","Denmark","Midtjylland",5
+"172","Europe","Denmark","Syddanmark",5
+"173","Europe","Finland","Helsinki",5
+"174","Europe","Finland",NA,5
+"175","Europe","France","Île-de-France",5
+"176","Europe","France","Nouvelle-Aquitaine",5
+"177","Europe","Italy","Piedmont",5
+"178","Europe","Italy","Tuscany",5
+"179","Europe","Latvia",NA,5
+"180","Europe","Russia","Moscow",5
+"181","Europe","Switzerland","Zurich",5
+"182","North America","Canada","Saskatchewan",5
+"183","North America","USA","North Carolina",5
+"184","South America","Chile","La Araucania",5
+"185","Africa","Democratic Republic of the Congo","Kinshasa",4
+"186","Asia","Bahrain",NA,4
+"187","Asia","India","Gujarat",4
+"188","Asia","India","Himachal Pradesh",4
+"189","Asia","India","Karnataka",4
+"190","Asia","Iran","Hormozgan",4
+"191","Asia","Iran","Kerman",4
+"192","Asia","Israel","Jerusalem District",4
+"193","Asia","Japan","Aichi",4
+"194","Asia","Japan","Ehime",4
+"195","Asia","Japan","Fukuoka",4
+"196","Asia","Japan","Kansai",4
+"197","Asia","Japan","Tokyo",4
+"198","Asia","Malaysia","Kuala Lumpur",4
+"199","Asia","Saudi Arabia","Jeddah",4
+"200","Asia","Taiwan","Taipei",4
+"201","Asia","Vietnam","Hanoi",4
+"202","Europe","Belgium","Antwerp",4
+"203","Europe","Ireland","Cork",4
+"204","Europe","Spain","Asturias",4
+"205","Europe","Sweden","Dalarna",4
+"206","Europe","Switzerland","Ticino",4
+"207","Europe","Turkey",NA,4
+"208","North America","USA","Pennsylvania",4
+"209","Oceania","Australia","Northern Territory",4
+"210","Oceania","New Zealand","Waikato",4
+"211","South America","Brazil","Pernambuco",4
+"212","Africa","South Africa","Eastern Cape",3
+"213","Asia","Indonesia","East Java",3
+"214","Asia","Iran","Lorestan",3
+"215","Asia","Israel","Jerusalem",3
+"216","Asia","Israel","North District",3
+"217","Asia","Japan","Hyogo",3
+"218","Asia","Japan","Ishikawa",3
+"219","Asia","Philippines","Manila",3
+"220","Asia","South Korea","Chungcheongnam-do",3
+"221","Asia","Taiwan","New Taipei City",3
+"222","Europe","Austria","Ischgl",3
+"223","Europe","Austria","Lower Austria",3
+"224","Europe","Austria","Vienna",3
+"225","Europe","France","Centre-Val de Loire",3
+"226","Europe","Germany","Schleswig-Holstein",3
+"227","Europe","Ireland","Wicklow",3
+"228","Europe","Italy","Lazio",3
+"229","Europe","Netherlands","Friesland",3
+"230","Europe","Netherlands","Zeeland",3
+"231","Europe","Poland",NA,3
+"232","Europe","Romania","Dolj",3
+"233","Europe","Sweden","Uppsala",3
+"234","Europe","Switzerland","Basel-Landschaft",3
+"235","Europe","Switzerland","Basel-Stadt",3
+"236","Europe","Switzerland","Grisons",3
+"237","Europe","Switzerland","Solothurn",3
+"238","Europe","Switzerland",NA,3
+"239","North America","Canada","Newfoundland and Labrador",3
+"240","North America","Canada","Nova Scotia",3
+"241","North America","Costa Rica","San Jose",3
+"242","North America","Mexico","Baja California",3
+"243","North America","Mexico","Campeche",3
+"244","North America","USA","Alaska",3
+"245","North America","USA","Hawaii",3
+"246","North America","USA","Kentucky",3
+"247","Oceania","Guam",NA,3
+"248","South America","Argentina","Ciudad Autonoma de Buenos Aires",3
+"249","South America","Argentina","Cordoba",3
+"250","South America","Brazil","Acre",3
+"251","South America","Brazil","Ceara",3
+"252","South America","Brazil","Rio Grande do Sul",3
+"253","South America","Brazil","Santa Catarina",3
+"254","South America","Colombia","Amazonas",3
+"255","South America","Peru","Lambayeque",3
+"256","Africa","Democratic Republic of the Congo","Sud Kivu",2
+"257","Africa","Kenya","Mombasa",2
+"258","Africa","Morocco",NA,2
+"259","Africa","Nigeria","Lagos State",2
+"260","Africa","Nigeria","Oyo",2
+"261","Africa","Reunion",NA,2
+"262","Africa","Senegal","Diourbel",2
+"263","Africa","Senegal","Thies",2
+"264","Africa","Senegal",NA,2
+"265","Africa","Tunisia","Monastir",2
+"266","Asia","Bangladesh","Chittagong",2
+"267","Asia","Bangladesh","Dhaka",2
+"268","Asia","Bangladesh",NA,2
+"269","Asia","China","Jining",2
+"270","Asia","India","Chandigarh",2
+"271","Asia","India","Haryana",2
+"272","Asia","Indonesia","West Sumatra",2
+"273","Asia","Iran","Semnan",2
+"274","Asia","Israel","Haifa",2
+"275","Asia","Israel","Kiryat Ono",2
+"276","Asia","Israel","South District",2
+"277","Asia","Israel","Tel-Aviv",2
+"278","Asia","Israel",NA,2
+"279","Asia","Japan","Fukushima",2
+"280","Asia","Japan","Kyoto",2
+"281","Asia","Japan","Okinawa",2
+"282","Asia","Kazakhstan","Atyrau region",2
+"283","Asia","Philippines","National Capital Region",2
+"284","Asia","Saudi Arabia","Madinah",2
+"285","Asia","Thailand","Nonthaburi",2
+"286","Europe","Canary Islands","Las Palmas",2
+"287","Europe","Cyprus",NA,2
+"288","Europe","Czech Republic","Prague",2
+"289","Europe","France","Normandie",2
+"290","Europe","France",NA,2
+"291","Europe","Germany","Lower Saxony",2
+"292","Europe","Ireland",NA,2
+"293","Europe","Italy","Abruzzo",2
+"294","Europe","Italy","The Marches",2
+"295","Europe","Lithuania","Marijampoles apskritis",2
+"296","Europe","Lithuania","Vilkaviskis",2
+"297","Europe","Netherlands","Limburg",2
+"298","Europe","Netherlands","Overijssel",2
+"299","Europe","North Macedonia","Skopje",2
+"300","Europe","Norway","Rogaland",2
+"301","Europe","Norway",NA,2
+"302","Europe","Romania","Suceava",2
+"303","Europe","Russia","Saint-Petersburg",2
+"304","Europe","Slovakia","Ilava",2
+"305","Europe","Spain","Castilla-La Mancha",2
+"306","Europe","Spain","Catalonia",2
+"307","Europe","Spain","Melilla",2
+"308","Europe","Spain",NA,2
+"309","Europe","Sweden","Ostergotland",2
+"310","Europe","Sweden","Sormland",2
+"311","Europe","Sweden","Vastmanland",2
+"312","Europe","Switzerland","Aargau",2
+"313","Europe","Switzerland","Geneva",2
+"314","Europe","Turkey","Marmara",2
+"315","North America","Canada","New Brunswick",2
+"316","North America","Mexico","Chiapas",2
+"317","North America","Panama","Colon",2
+"318","North America","Puerto Rico",NA,2
+"319","North America","USA","Arkansas",2
+"320","North America","USA","Kansas",2
+"321","North America","USA","West Virginia",2
+"322","Oceania","Australia","Australian Capital Territory",2
+"323","Oceania","Australia","Tasmania",2
+"324","Oceania","New Zealand","Auckland",2
+"325","South America","Argentina","Mendoza",2
+"326","South America","Argentina","Moreno",2
+"327","South America","Argentina","Tierra del Fuego",2
+"328","South America","Brazil","Bahia",2
+"329","South America","Brazil","Espirito Santo",2
+"330","South America","Brazil","Minas Gerais",2
+"331","South America","Brazil","Parana",2
+"332","South America","Colombia","Antioquia",2
+"333","South America","Peru","Arequipa",2
+"334","Africa","Algeria","Blida",1
+"335","Africa","Algeria","Boufarik",1
+"336","Africa","Angola","Luanda",1
+"337","Africa","Benin","Cotonou",1
+"338","Africa","Burkina Faso","Bobo Dioulasso",1
+"339","Africa","Egypt","Cairo",1
+"340","Africa","Gabon","Lambarene",1
+"341","Africa","Gambia","Kombo",1
+"342","Africa","Ghana","Abuakwa North",1
+"343","Africa","Ghana","Western Region",1
+"344","Africa","Ghana",NA,1
+"345","Africa","Kenya","Nairobi",1
+"346","Africa","Kenya","Wakiso",1
+"347","Africa","Kenya",NA,1
+"348","Africa","Libya","Tripoli",1
+"349","Africa","Madagascar","Toamasina",1
+"350","Africa","Malawi",NA,1
+"351","Africa","Mali",NA,1
+"352","Africa","Mauritius","Pamplemousses",1
+"353","Africa","Mauritius","Plaine-Wilhems",1
+"354","Africa","Morocco","Casablanca",1
+"355","Africa","Nigeria","Borno State",1
+"356","Africa","Senegal","Kedougou",1
+"357","Africa","Senegal","Louga",1
+"358","Africa","South Africa","Mpumalanga",1
+"359","Africa","South Africa","North West",1
+"360","Africa","South Africa","Northern Cape",1
+"361","Africa","Togo","Grand Lome",1
+"362","Africa","Togo","Lome-golfe",1
+"363","Africa","Tunisia",NA,1
+"364","Africa","Uganda",NA,1
+"365","Africa","Zambia","Lusaka",1
+"366","Africa","Zimbabwe",NA,1
+"367","Asia","Afghanistan",NA,1
+"368","Asia","Cambodia","Sihanoukville",1
+"369","Asia","China","Hangzhou",1
+"370","Asia","China","Hunan",1
+"371","Asia","India","Jammu and Kashmir",1
+"372","Asia","India","Ladakh",1
+"373","Asia","India","Punjab",1
+"374","Asia","India","Uttarakhand",1
+"375","Asia","Indonesia","Jakarta",1
+"376","Asia","Indonesia","West Java",1
+"377","Asia","Iran","Buhehr",1
+"378","Asia","Iran","Chaharmahal and Bakhtiari",1
+"379","Asia","Iran","Gilan",1
+"380","Asia","Iran","Golestan",1
+"381","Asia","Iran","Kohgiluyeh and Boyer-Ahmad",1
+"382","Asia","Iran","Mazandaran",1
+"383","Asia","Iran","Razavi Khorasan",1
+"384","Asia","Iran","West Azarbayjan",1
+"385","Asia","Israel","Bat-Yam",1
+"386","Asia","Israel","Maale-Edumim",1
+"387","Asia","Israel","Petah-Tikva",1
+"388","Asia","Israel","Rishon-Letsion",1
+"389","Asia","Israel","Rishpon",1
+"390","Asia","Israel","South Coast District",1
+"391","Asia","Israel","Tel Aviv District",1
+"392","Asia","Israel","Yuvalim",1
+"393","Asia","Japan","Gunma",1
+"394","Asia","Japan","Hiroshima",1
+"395","Asia","Japan","HokurikuShinsyu",1
+"396","Asia","Japan","Ibaraki",1
+"397","Asia","Japan","Kagoshima",1
+"398","Asia","Japan","Kyusyu",1
+"399","Asia","Japan","Mie",1
+"400","Asia","Japan","Miyagi",1
+"401","Asia","Japan","Miyazaki",1
+"402","Asia","Japan","Nagasaki",1
+"403","Asia","Japan","Okayama",1
+"404","Asia","Japan","Osaka",1
+"405","Asia","Japan","Wakayama",1
+"406","Asia","Jordan","Amman",1
+"407","Asia","Kuwait","Hawali",1
+"408","Asia","Kyrgyzstan","Bishkek",1
+"409","Asia","Pakistan","Khyber Pakhtunkhwa",1
+"410","Asia","Palestine","Bethlehem",1
+"411","Asia","Palestine","West Bank",1
+"412","Asia","Philippines","Calabarzon",1
+"413","Asia","Philippines","Ilocos",1
+"414","Asia","Philippines","Soccsksargen",1
+"415","Asia","South Korea","Seoul",1
+"416","Asia","Sri Lanka","Colombo",1
+"417","Asia","Sri Lanka","Kalutara",1
+"418","Asia","Sri Lanka",NA,1
+"419","Asia","Taiwan","Taoyuan",1
+"420","Asia","Vietnam","Ho Chi Minh City",1
+"421","Asia","Vietnam",NA,1
+"422","Europe","Austria","Kufstein",1
+"423","Europe","Austria","Vorarlberg",1
+"424","Europe","Azerbaijan",NA,1
+"425","Europe","Belgium","Arbre",1
+"426","Europe","Belgium","Beerse",1
+"427","Europe","Belgium","Beringen",1
+"428","Europe","Belgium","Beveren-Waas",1
+"429","Europe","Belgium","Boussu",1
+"430","Europe","Belgium","Brunehaut",1
+"431","Europe","Belgium","Brussel",1
+"432","Europe","Belgium","Chercq",1
+"433","Europe","Belgium","Colfontaine",1
+"434","Europe","Belgium","Edingen",1
+"435","Europe","Belgium","Flanders",1
+"436","Europe","Belgium","Fontaine-l'Eveque",1
+"437","Europe","Belgium","Geraardsbergen",1
+"438","Europe","Belgium","Gierle",1
+"439","Europe","Belgium","Hoogstraten",1
+"440","Europe","Belgium","Jumet",1
+"441","Europe","Belgium","Langdorp",1
+"442","Europe","Belgium","Loupoigne",1
+"443","Europe","Belgium","Molenbeek-Saint-Jean",1
+"444","Europe","Belgium","Mons",1
+"445","Europe","Belgium","Montigny-le-Tilleul",1
+"446","Europe","Belgium","Ottignies",1
+"447","Europe","Belgium","Pulderbos",1
+"448","Europe","Belgium","Rixensart",1
+"449","Europe","Belgium","Ronse",1
+"450","Europe","Belgium","Sint-Agatha-Berchem",1
+"451","Europe","Belgium","Soignies",1
+"452","Europe","Belgium","Stabroek",1
+"453","Europe","Belgium","Stekene",1
+"454","Europe","Belgium","Tienen",1
+"455","Europe","Belgium","Torhout",1
+"456","Europe","Belgium","Tubize",1
+"457","Europe","Belgium","Wallonie",1
+"458","Europe","Belgium","Zolder",1
+"459","Europe","Belgium","Zoutleeuw",1
+"460","Europe","Belgium",NA,1
+"461","Europe","Bosnia and Herzegovina","Bihac",1
+"462","Europe","Bulgaria","Dupnitza",1
+"463","Europe","Bulgaria","Kyustendil",1
+"464","Europe","Croatia","Pula",1
+"465","Europe","Croatia","Varazdin",1
+"466","Europe","Czech Republic","Central Bohemian Region",1
+"467","Europe","Czech Republic","Hranice na Morave",1
+"468","Europe","Czech Republic","Jihlava",1
+"469","Europe","Czech Republic","Litovel",1
+"470","Europe","Czech Republic","Northern Bohemia Region",1
+"471","Europe","Czech Republic","Zlin",1
+"472","Europe","Faroe Islands",NA,1
+"473","Europe","France","Bourgogne-Franche-Comte",1
+"474","Europe","France","Centre Val de Loire",1
+"475","Europe","France","Hauts de France",1
+"476","Europe","France","Pays de la Loire",1
+"477","Europe","Germany","Brandenburg",1
+"478","Europe","Germany","Mecklenburg-Western Pomerania",1
+"479","Europe","Germany","Thuringia",1
+"480","Europe","Germany",NA,1
+"481","Europe","Hungary","Csongrad County",1
+"482","Europe","Ireland","Clare",1
+"483","Europe","Ireland","Donegal",1
+"484","Europe","Ireland","Longford",1
+"485","Europe","Ireland","Meath",1
+"486","Europe","Ireland","Westmeath",1
+"487","Europe","Italy","Basilicata",1
+"488","Europe","Italy","Calabria",1
+"489","Europe","Italy","Sardinia",1
+"490","Europe","Norway","Innlandet",1
+"491","Europe","Norway","Vestland",1
+"492","Europe","Poland","Mazowieckie",1
+"493","Europe","Romania","Bucuresti",1
+"494","Europe","Russia","Kirov region",1
+"495","Europe","Russia","Omsk",1
+"496","Europe","Russia","Saint Petersburg",1
+"497","Europe","Russia","Sverdlovsk",1
+"498","Europe","Serbia","Sabac",1
+"499","Europe","Serbia","Uzice",1
+"500","Europe","Slovakia","Bratislava",1
+"501","Europe","Slovakia","Petrovany",1
+"502","Europe","Slovakia","Zehra",1
+"503","Europe","Spain","Cantabria",1
+"504","Europe","Spain","Extremadura",1
+"505","Europe","Spain","La_Rioja",1
+"506","Europe","Spain","Valencian Community",1
+"507","Europe","Sweden","Halland",1
+"508","Europe","Sweden","Norrbotten",1
+"509","Europe","Sweden","Orebro",1
+"510","Europe","Sweden","Orebro lan",1
+"511","Europe","Sweden","Skane",1
+"512","Europe","Sweden","Varmland",1
+"513","Europe","Sweden","Vasterbotten",1
+"514","Europe","Sweden","Vasternorrland",1
+"515","Europe","Switzerland","Lucerne",1
+"516","Europe","Switzerland","Thurgau",1
+"517","Europe","Switzerland","Wallis",1
+"518","Europe","Turkey","Kars Province",1
+"519","North America","Canada","Prince Edward Island",1
+"520","North America","Costa Rica","Alajuela",1
+"521","North America","Cuba",NA,1
+"522","North America","Dominican Republic",NA,1
+"523","North America","Guadeloupe","Les Abymes",1
+"524","North America","Guatemala","Guatemala",1
+"525","North America","Haiti","OST",1
+"526","North America","Mexico","Baja California Sur",1
+"527","North America","Mexico","Durango",1
+"528","North America","Mexico","Hidalgo",1
+"529","North America","Mexico","Morelos",1
+"530","North America","Mexico","Nayarit",1
+"531","North America","Mexico","Puebla",1
+"532","North America","Mexico","Sinaloa",1
+"533","North America","Mexico","Yucatan",1
+"534","North America","Panama","Panama Center",1
+"535","North America","Panama","Panama North",1
+"536","North America","Panama","San Miguelito",1
+"537","North America","Saint Barthelemy",NA,1
+"538","North America","U.S. Virgin Islands","St. Croix",1
+"539","North America","USA","District of Columbia",1
+"540","North America","USA","South Carolina",1
+"541","Oceania","Australia","Western Australia",1
+"542","Oceania","Fiji",NA,1
+"543","Oceania","New Zealand","Otago",1
+"544","Oceania","New Zealand","Southern",1
+"545","South America","Argentina","La Matanza",1
+"546","South America","Argentina","Neuquen",1
+"547","South America","Bolivia","Santa Cruz",1
+"548","South America","Brazil","Alagoas",1
+"549","South America","Brazil","Mato Grosso",1
+"550","South America","Brazil","Mato Grosso do Sul",1
+"551","South America","Colombia","Bolivar",1
+"552","South America","Colombia","Huila",1
+"553","South America","Colombia","Magdalena",1
+"554","South America","Colombia","Valle del Cauca",1
+"555","South America","Ecuador","Guayas",1
+"556","South America","Ecuador","Quito",1
+"557","South America","Guyana",NA,1
+"558","South America","Paraguay",NA,1
+"559","South America","Peru","Callao",1
+"560","South America","Peru","Junin",1
+"561","South America","Venezuela","Sucre",1

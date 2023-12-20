@@ -1,0 +1,37 @@
+"","continent","country","state","city","n"
+"1","North America","USA","Oklahoma","Oklahoma City",18
+"2","Europe","France","Grand Est",NA,13
+"3","Europe","Spain","Castilla y Leon",NA,12
+"4","North America","USA","New York","Westchester County",10
+"5","Asia","India",NA,NA,6
+"6","Asia","China","Hubei","Wuhan",3
+"7","Europe","United Kingdom","England",NA,3
+"8","Asia","Japan","Tokyo",NA,2
+"9","Asia","Lebanon",NA,NA,2
+"10","Europe","Slovakia","Ilava",NA,2
+"11","North America","Canada","Quebec",NA,2
+"12","North America","USA","Minnesota","Stearns County",2
+"13","South America","Argentina","Buenos Aires","Exaltación de la Cruz",2
+"14","Africa","Niger","Niamey",NA,1
+"15","Africa","Zambia","Choma","Macha",1
+"16","Asia","China","Anhui","Hefei",1
+"17","Asia","China","Guangdong","Dongguan",1
+"18","Asia","China","Guangxi","Nanning",1
+"19","Asia","China","Jiangxi","Fuzhou",1
+"20","Asia","China","Sichuan",NA,1
+"21","Asia","India","Himachal Pradesh",NA,1
+"22","Europe","Belgium","Beveren-Waas",NA,1
+"23","Europe","France","Provence-Alpes-Cote d'Azur","Nice",1
+"24","Europe","Germany","Baden-Wurttemberg","Freiburg",1
+"25","Europe","Italy","Lombardy",NA,1
+"26","Europe","Norway",NA,NA,1
+"27","Europe","Spain","Comunitat Valenciana","Alicante",1
+"28","Europe","Spain","La Rioja",NA,1
+"29","Europe","Spain","Madrid","Madrid",1
+"30","Europe","Sweden","Stockholm",NA,1
+"31","North America","USA","California","San Diego",1
+"32","North America","USA","Florida",NA,1
+"33","North America","USA","Iowa",NA,1
+"34","North America","USA","Montana","Yellowstone",1
+"35","North America","USA","New York","Brooklyn",1
+"36","North America","USA","Washington",NA,1

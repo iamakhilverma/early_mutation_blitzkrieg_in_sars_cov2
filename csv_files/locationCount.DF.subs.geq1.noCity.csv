@@ -1,0 +1,81 @@
+"","continent","country","state","n"
+"1","North America","USA","Oklahoma",18
+"2","North America","USA","New York",14
+"3","Europe","France","Grand Est",13
+"4","Europe","Spain","Castilla y Leon",12
+"5","North America","USA","Montana",9
+"6","Asia","India",NA,8
+"7","North America","USA","Minnesota",7
+"8","Asia","China","Hubei",5
+"9","Europe","United Kingdom","England",5
+"10","North America","Canada","Quebec",4
+"11","South America","Argentina","Buenos Aires",4
+"12","Asia","China","Anhui",3
+"13","North America","USA","California",3
+"14","South America","Brazil","Sao Paulo",3
+"15","Africa","Morocco","Rabat",2
+"16","Africa","Niger","Niamey",2
+"17","Africa","South Africa","Gauteng",2
+"18","Asia","China","Guangdong",2
+"19","Asia","China","Jiangxi",2
+"20","Asia","India","Uttar Pradesh",2
+"21","Asia","Japan","Tokyo",2
+"22","Asia","Lebanon",NA,2
+"23","Europe","Denmark","Midtjylland",2
+"24","Europe","France","Bretagne",2
+"25","Europe","Slovakia","Ilava",2
+"26","Europe","Spain","Madrid",2
+"27","North America","USA","Arizona",2
+"28","North America","USA","Florida",2
+"29","North America","USA","Iowa",2
+"30","North America","USA","Washington",2
+"31","Africa","Democratic Republic of the Congo","Sud Kivu",1
+"32","Africa","Morocco","Casablanca",1
+"33","Africa","Senegal","Dakar",1
+"34","Africa","Sierra Leone",NA,1
+"35","Africa","Zambia","Choma",1
+"36","Asia","China","Guangxi",1
+"37","Asia","China","Shanghai",1
+"38","Asia","China","Sichuan",1
+"39","Asia","China","Yunnan",1
+"40","Asia","Hong Kong",NA,1
+"41","Asia","India","Gujarat",1
+"42","Asia","India","Himachal Pradesh",1
+"43","Asia","Japan","Fukuoka",1
+"44","Asia","Saudi Arabia",NA,1
+"45","Asia","United Arab Emirates",NA,1
+"46","Europe","Belgium","Beveren-Waas",1
+"47","Europe","Canary Islands",NA,1
+"48","Europe","France","Normandie",1
+"49","Europe","France","Occitanie",1
+"50","Europe","France","Provence-Alpes-Cote d'Azur",1
+"51","Europe","Germany","Baden-Wurttemberg",1
+"52","Europe","Germany","Hamburg",1
+"53","Europe","Germany","North Rhine-Westphalia",1
+"54","Europe","Ireland","Dublin",1
+"55","Europe","Ireland","Limerick",1
+"56","Europe","Ireland","Longford",1
+"57","Europe","Italy","Lombardy",1
+"58","Europe","Lithuania","Marijampoles apskritis",1
+"59","Europe","Norway","Oslo",1
+"60","Europe","Norway","Viken",1
+"61","Europe","Norway",NA,1
+"62","Europe","Spain","Comunitat Valenciana",1
+"63","Europe","Spain","La Rioja",1
+"64","Europe","Sweden","Stockholm",1
+"65","Europe","Switzerland","Aargau",1
+"66","Europe","Switzerland","Vaud",1
+"67","North America","Canada","Alberta",1
+"68","North America","Canada","British Columbia",1
+"69","North America","Costa Rica","Alajuela",1
+"70","North America","Haiti","OST",1
+"71","North America","Mexico","Morelos",1
+"72","North America","USA","Illinois",1
+"73","North America","USA","Indiana",1
+"74","North America","USA","Maryland",1
+"75","North America","USA","Massachusetts",1
+"76","North America","USA","Michigan",1
+"77","North America","USA","Ohio",1
+"78","North America","USA","Utah",1
+"79","Oceania","Australia","South Australia",1
+"80","Oceania","Australia","Victoria",1

@@ -1,0 +1,61 @@
+"aa_subs","collection_date","accession_id","location","counts","region","mutation_name","fraction","per_abundance","ref","pos","alt","continent","country","state","city"
+"NSP9_T19I",2020-01-28,"EPI_ISL_428474","Asia/China/Guangdong/Huizhou",11938,"NSP9","T19I",0.00102832953990738,0.102832953990738,"T",19,"I","Asia","China","Guangdong","Huizhou"
+"Spike_A570D",2020-02-07,"EPI_ISL_1603195","Europe/Spain/Castilla y Leon",1011028,"Spike","A570D",0.0870891236449553,8.70891236449553,"A",570,"D","Europe","Spain","Castilla y Leon",NA
+"Spike_A67V",2020-03-12,"EPI_ISL_779718","Europe/Spain/Madrid/Madrid",1889859,"Spike","A67V",0.162790906011042,16.2790906011042,"A",67,"V","Europe","Spain","Madrid","Madrid"
+"Spike_D1118H",2020-02-07,"EPI_ISL_1603195","Europe/Spain/Castilla y Leon",1009712,"Spike","D1118H",0.0869757644830758,8.69757644830758,"D",1118,"H","Europe","Spain","Castilla y Leon",NA
+"Spike_D405N",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3499202,"Spike","D405N",0.301418393592141,30.1418393592141,"D",405,"N","Europe","France","Grand Est",NA
+"Spike_D614G",2020-01-01,"EPI_ISL_4405694","South America/Argentina/Buenos Aires/Exaltaci<U+00F3>n de la Cruz",11551573,"Spike","D614G",0.995043034704012,99.5043034704012,"D",614,"G","South America","Argentina","Buenos Aires","Exaltaci<U+00F3>n de la Cruz"
+"Spike_D796Y",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5455993,"Spike","D796Y",0.46997476724978,46.997476724978,"D",796,"Y","North America","USA","Oklahoma","Oklahoma City"
+"Spike_D950N",2020-03-12,"EPI_ISL_6661895","North America/USA/New York/Westchester County",3685460,"Spike","D950N",0.317462505122051,31.7462505122051,"D",950,"N","North America","USA","New York","Westchester County"
+"Spike_E484A",2020-03-03,"EPI_ISL_578200","Europe/Spain/La Rioja",5215991,"Spike","E484A",0.449301191589129,44.9301191589129,"E",484,"A","Europe","Spain","La Rioja",NA
+"Spike_F486S",2020-08-12,"EPI_ISL_16941580","Asia/India/Uttar Pradesh",82527,"Spike","F486S",0.00710880817054248,0.710880817054249,"F",486,"S","Asia","India","Uttar Pradesh",NA
+"Spike_F486V",2020-03-31,"EPI_ISL_14471084","Europe/Slovakia/Ilava",1595654,"Spike","F486V",0.137448328335682,13.7448328335682,"F",486,"V","Europe","Slovakia","Ilava",NA
+"Spike_F490S",2020-04-05,"EPI_ISL_442625","Europe/United Kingdom/England",321252,"Spike","F490S",0.0276723840973635,2.76723840973635,"F",490,"S","Europe","United Kingdom","England",NA
+"Spike_G142D",2020-03-03,"EPI_ISL_2758215","Asia/India",7847034,"Spike","G142D",0.675937080152249,67.5937080152249,"G",142,"D","Asia","India",NA,NA
+"Spike_G339D",2020-03-05,"EPI_ISL_420138","Europe/Norway",4933857,"Spike","G339D",0.424998399964717,42.4998399964717,"G",339,"D","Europe","Norway",NA,NA
+"Spike_G339H",2020-08-08,"EPI_ISL_16941576","Asia/India/Uttar Pradesh",368671,"Spike","G339H",0.0317570179098,3.17570179098,"G",339,"H","Asia","India","Uttar Pradesh",NA
+"Spike_G446S",2020-04-04,"EPI_ISL_440772","Europe/United Kingdom/England",1739400,"Spike","G446S",0.149830491013142,14.9830491013142,"G",446,"S","Europe","United Kingdom","England",NA
+"Spike_G496S",2020-05-30,"EPI_ISL_13597467","North America/USA/Minnesota/Stearns County",1681519,"Spike","G496S",0.144844669091599,14.4844669091599,"G",496,"S","North America","USA","Minnesota","Stearns County"
+"Spike_H146Q",2020-04-01,"EPI_ISL_763351","Europe/Ireland/Limerick",242599,"Spike","H146Q",0.0208972791130834,2.08972791130834,"H",146,"Q","Europe","Ireland","Limerick",NA
+"Spike_H655Y",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5601471,"Spike","H655Y",0.482506122988316,48.2506122988316,"H",655,"Y","North America","USA","Oklahoma","Oklahoma City"
+"Spike_K417N",2020-02-18,"EPI_ISL_10980369","Africa/Zambia/Choma/Macha",4679852,"Spike","K417N",0.403118617355891,40.3118617355891,"K",417,"N","Africa","Zambia","Choma","Macha"
+"Spike_K444T",2020-10-15,"EPI_ISL_15717246","Europe/France/Normandie",329539,"Spike","K444T",0.0283862194883178,2.83862194883178,"K",444,"T","Europe","France","Normandie",NA
+"Spike_L212I",2020-04-02,"EPI_ISL_433695","Europe/United Kingdom/England",1698107,"Spike","L212I",0.146273545822039,14.6273545822039,"L",212,"I","Europe","United Kingdom","England",NA
+"Spike_L24S",2020-03-27,"EPI_ISL_536269","North America/Canada/Quebec",4802,"Spike","L24S",0.0004136403460073,0.0413640346007307,"L",24,"S","North America","Canada","Quebec",NA
+"Spike_L368I",2020-05-22,"EPI_ISL_14186967","North America/Haiti/OST",244622,"Spike","L368I",0.02107153867576,2.107153867576,"L",368,"I","North America","Haiti","OST",NA
+"Spike_L452R",2020-01-26,"EPI_ISL_7946128","North America/USA/California/San Diego",5505085,"Spike","L452R",0.474203511911627,47.4203511911627,"L",452,"R","North America","USA","California","San Diego"
+"Spike_L981F",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",1899593,"Spike","L981F",0.163629384796555,16.3629384796555,"L",981,"F","North America","USA","Oklahoma","Oklahoma City"
+"Spike_N440K",2020-03-10,"EPI_ISL_3458197","North America/Canada/Quebec",4617770,"Spike","N440K",0.397770924735977,39.7770924735977,"N",440,"K","North America","Canada","Quebec",NA
+"Spike_N460K",2020-08-08,"EPI_ISL_16941576","Asia/India/Uttar Pradesh",674777,"Spike","N460K",0.0581247379753795,5.81247379753795,"N",460,"K","Asia","India","Uttar Pradesh",NA
+"Spike_N501Y",2020-02-07,"EPI_ISL_1603195","Europe/Spain/Castilla y Leon",6279437,"Spike","N501Y",0.540905558811138,54.0905558811138,"N",501,"Y","Europe","Spain","Castilla y Leon",NA
+"Spike_N679K",2020-03-18,"EPI_ISL_421580","North America/USA/New York/Brooklyn",5479501,"Spike","N679K",0.471999727111075,47.1999727111075,"N",679,"K","North America","USA","New York","Brooklyn"
+"Spike_N764K",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5267834,"Spike","N764K",0.453766905137246,45.3766905137246,"N",764,"K","North America","USA","Oklahoma","Oklahoma City"
+"Spike_N856K",2020-01-25,"EPI_ISL_493155","Asia/China/Hubei/Wuhan",1900886,"Spike","N856K",0.163740762757277,16.3740762757277,"N",856,"K","Asia","China","Hubei","Wuhan"
+"Spike_N969K",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5482415,"Spike","N969K",0.472250736683809,47.2250736683809,"N",969,"K","North America","USA","Oklahoma","Oklahoma City"
+"Spike_P681H",2020-01-01,"EPI_ISL_3804266","Africa/Niger/Niamey",6555302,"Spike","P681H",0.564668343911368,56.4668343911368,"P",681,"H","Africa","Niger","Niamey",NA
+"Spike_P681R",2020-03-03,"EPI_ISL_2758215","Asia/India",3847293,"Spike","P681R",0.33140266716191,33.140266716191,"P",681,"R","Asia","India",NA,NA
+"Spike_Q183E",2020-03-23,"EPI_ISL_15026478","North America/USA/Iowa",249010,"Spike","Q183E",0.0214495174009328,2.14495174009328,"Q",183,"E","North America","USA","Iowa",NA
+"Spike_Q493R",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3228286,"Spike","Q493R",0.278081911297489,27.8081911297489,"Q",493,"R","Europe","France","Grand Est",NA
+"Spike_Q498R",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",5093510,"Spike","Q498R",0.43875077859052,43.875077859052,"Q",498,"R","Europe","France","Grand Est",NA
+"Spike_Q954H",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5477722,"Spike","Q954H",0.471846485508504,47.1846485508504,"Q",954,"H","North America","USA","Oklahoma","Oklahoma City"
+"Spike_R158G",2020-04-28,"EPI_ISL_676887","North America/USA/New York/Schenectady County",16388,"Spike","R158G",0.00141164889428733,0.141164889428733,"R",158,"G","North America","USA","New York","Schenectady County"
+"Spike_R346T",2020-06-18,"EPI_ISL_524740","Asia/India/Gujarat/Gandhinagar",741514,"Spike","R346T",0.0638734084817289,6.38734084817289,"R",346,"T","Asia","India","Gujarat","Gandhinagar"
+"Spike_R408S",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3328359,"Spike","R408S",0.286702117533639,28.6702117533639,"R",408,"S","Europe","France","Grand Est",NA
+"Spike_S371F",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3460204,"Spike","S371F",0.29805913782088,29.805913782088,"S",371,"F","Europe","France","Grand Est",NA
+"Spike_S371L",2020-05-30,"EPI_ISL_13597467","North America/USA/Minnesota/Stearns County",1667303,"Spike","S371L",0.143620114497922,14.3620114497922,"S",371,"L","North America","USA","Minnesota","Stearns County"
+"Spike_S373P",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",5185240,"Spike","S373P",0.446652325641593,44.6652325641593,"S",373,"P","Europe","France","Grand Est",NA
+"Spike_S375F",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",5168151,"Spike","S375F",0.445180293181593,44.5180293181593,"S",375,"F","Europe","France","Grand Est",NA
+"Spike_S477N",2020-01-10,"EPI_ISL_8317205","Asia/Lebanon",5285659,"Spike","S477N",0.455302336034285,45.5302336034285,"S",477,"N","Asia","Lebanon",NA,NA
+"Spike_S982A",2020-02-07,"EPI_ISL_1603195","Europe/Spain/Castilla y Leon",1010182,"Spike","S982A",0.0870162498980327,8.70162498980327,"S",982,"A","Europe","Spain","Castilla y Leon",NA
+"Spike_T19I",2020-03-22,"EPI_ISL_462265","Europe/Belgium/Beveren-Waas",3558539,"Spike","T19I",0.30652963416087,30.652963416087,"T",19,"I","Europe","Belgium","Beveren-Waas",NA
+"Spike_T19R",2020-03-12,"EPI_ISL_6661895","North America/USA/New York/Westchester County",3817045,"Spike","T19R",0.328797129222295,32.8797129222295,"T",19,"R","North America","USA","New York","Westchester County"
+"Spike_T376A",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3452505,"Spike","T376A",0.297395952268213,29.7395952268213,"T",376,"A","Europe","France","Grand Est",NA
+"Spike_T478K",2020-03-12,"EPI_ISL_6661895","North America/USA/New York/Westchester County",9024745,"Spike","T478K",0.777384140863747,77.7384140863747,"T",478,"K","North America","USA","New York","Westchester County"
+"Spike_T547K",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",1906677,"Spike","T547K",0.164239594753056,16.4239594753056,"T",547,"K","North America","USA","Oklahoma","Oklahoma City"
+"Spike_T716I",2020-02-07,"EPI_ISL_1603195","Europe/Spain/Castilla y Leon",1020201,"Spike","T716I",0.0878792783500626,8.78792783500626,"T",716,"I","Europe","Spain","Castilla y Leon",NA
+"Spike_T95I",2020-01-10,"EPI_ISL_8311741","Asia/Lebanon",3405441,"Spike","T95I",0.293341897864946,29.3341897864946,"T",95,"I","Asia","Lebanon",NA,NA
+"Spike_V213E",2020-11-02,"EPI_ISL_669797","Europe/Denmark/Midtjylland",253419,"Spike","V213E",0.0218293050489016,2.18293050489016,"V",213,"E","Europe","Denmark","Midtjylland",NA
+"Spike_V213G",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3291486,"Spike","V213G",0.283525907521492,28.3525907521492,"V",213,"G","Europe","France","Grand Est",NA
+"Spike_V445P",2021-10-04,"EPI_ISL_17532340","Africa/South Africa/Gauteng",240048,"Spike","V445P",0.0206775380629658,2.06775380629658,"V",445,"P","Africa","South Africa","Gauteng",NA
+"Spike_V83A",2020-05-07,"EPI_ISL_805001","North America/Canada/Alberta",247138,"Spike","V83A",0.021288264854551,2.1288264854551,"V",83,"A","North America","Canada","Alberta",NA
+"Spike_Y505H",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",5124215,"Spike","Y505H",0.441395682135742,44.1395682135742,"Y",505,"H","Europe","France","Grand Est",NA

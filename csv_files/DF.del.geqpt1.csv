@@ -1,0 +1,50 @@
+"","aa_subs","collection_date","accession_id","location","counts","region","mutation_name","fraction","per_abundance","ref","pos","alt","continent","country","state","city"
+"NS3_V255del","NS3_V255del",2020-03-06,"EPI_ISL_983548","Europe/Germany/North Rhine-Westphalia/Heinsberg",13291,"NS3","V255del",0.00114487585147503,0.114487585147503,"V",255,"del","Europe","Germany","North Rhine-Westphalia","Heinsberg"
+"NS7a_F59del","NS7a_F59del",2020-03-15,"EPI_ISL_603845","North America/USA/Utah",13429,"NS7a","F59del",0.00115676305841985,0.115676305841985,"F",59,"del","North America","USA","Utah",NA
+"NS7a_F63del","NS7a_F63del",2020-03-15,"EPI_ISL_603845","North America/USA/Utah",21252,"NS7a","F63del",0.00183062986950173,0.183062986950173,"F",63,"del","North America","USA","Utah",NA
+"NS7a_Q62del","NS7a_Q62del",2020-03-12,"EPI_ISL_465012","Europe/United Kingdom/England",16104,"NS7a","Q62del",0.00138718536695162,0.138718536695162,"Q",62,"del","Europe","United Kingdom","England",NA
+"NS7a_S60del","NS7a_S60del",2020-03-12,"EPI_ISL_465012","Europe/United Kingdom/England",14412,"NS7a","S60del",0.00124143787310648,0.124143787310648,"S",60,"del","Europe","United Kingdom","England",NA
+"NS7a_T61del","NS7a_T61del",2020-03-12,"EPI_ISL_465012","Europe/United Kingdom/England",14494,"NS7a","T61del",0.00124850128592876,0.124850128592876,"T",61,"del","Europe","United Kingdom","England",NA
+"NS8_F86del","NS8_F86del",2020-06-22,"EPI_ISL_738675","North America/USA/California/Alameda County",17153,"NS8","F86del",0.00147754536756837,0.147754536756837,"F",86,"del","North America","USA","California","Alameda County"
+"NS8_G66del","NS8_G66del",2020-03-06,"EPI_ISL_417308","Europe/United Kingdom/England",13998,"NS8","G66del",0.00120577625227203,0.120577625227203,"G",66,"del","Europe","United Kingdom","England",NA
+"NS8_S67del","NS8_S67del",2020-03-06,"EPI_ISL_417308","Europe/United Kingdom/England",13355,"NS8","S67del",0.00115038875904365,0.115038875904364,"S",67,"del","Europe","United Kingdom","England",NA
+"NSP1_F143del","NSP1_F143del",2020-01-27,"EPI_ISL_410044","North America/USA/California",214270,"NSP1","F143del",0.0184570422613464,1.84570422613464,"F",143,"del","North America","USA","California",NA
+"NSP1_G82del","NSP1_G82del",2020-01-22,"EPI_ISL_451323","Asia/China/Sichuan",146949,"NSP1","G82del",0.0126580664734335,1.26580664734335,"G",82,"del","Asia","China","Sichuan",NA
+"NSP1_H83del","NSP1_H83del",2020-01-22,"EPI_ISL_451323","Asia/China/Sichuan",153812,"NSP1","H83del",0.0132492396709862,1.32492396709862,"H",83,"del","Asia","China","Sichuan",NA
+"NSP1_K141del","NSP1_K141del",2020-01-27,"EPI_ISL_410044","North America/USA/California",214285,"NSP1","K141del",0.0184583343490578,1.84583343490578,"K",141,"del","North America","USA","California",NA
+"NSP1_M85del","NSP1_M85del",2020-01-22,"EPI_ISL_451323","Asia/China/Sichuan",241104,"NSP1","M85del",0.0207685010378479,2.07685010378479,"M",85,"del","Asia","China","Sichuan",NA
+"NSP1_S142del","NSP1_S142del",2020-01-27,"EPI_ISL_410044","North America/USA/California",214303,"NSP1","S142del",0.0184598848543115,1.84598848543115,"S",142,"del","North America","USA","California",NA
+"NSP1_V84del","NSP1_V84del",2020-01-22,"EPI_ISL_451323","Asia/China/Sichuan",170312,"NSP1","V84del",0.0146705361535186,1.46705361535186,"V",84,"del","Asia","China","Sichuan",NA
+"NSP1_V86del","NSP1_V86del",2020-01-22,"EPI_ISL_451323","Asia/China/Sichuan",173573,"NSP1","V86del",0.0149514360219755,1.49514360219755,"V",86,"del","Asia","China","Sichuan",NA
+"NSP3_S1265del","NSP3_S1265del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",1835648,"NSP3","S1265del",0.158121214882886,15.8121214882886,"S",1265,"del","North America","USA","Oklahoma","Oklahoma City"
+"NSP6_F108del","NSP6_F108del",2020-01-28,"EPI_ISL_3364539","North America/USA/New York",4668427,"NSP6","F108del",0.402134477215713,40.2134477215713,"F",108,"del","North America","USA","New York",NA
+"NSP6_G107del","NSP6_G107del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",6507129,"NSP6","G107del",0.560518761156639,56.0518761156639,"G",107,"del","North America","USA","Oklahoma","Oklahoma City"
+"NSP6_G48del","NSP6_G48del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11676,"NSP6","G48del",0.00100576107454838,0.100576107454838,"G",48,"del","Asia","China","Anhui","Lu'an"
+"NSP6_H62del","NSP6_H62del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11691,"NSP6","H62del",0.00100705316225977,0.100705316225977,"H",62,"del","Asia","China","Anhui","Lu'an"
+"NSP6_H64del","NSP6_H64del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11691,"NSP6","H64del",0.00100705316225977,0.100705316225977,"H",64,"del","Asia","China","Anhui","Lu'an"
+"NSP6_I49del","NSP6_I49del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11665,"NSP6","I49del",0.00100481354356002,0.100481354356002,"I",49,"del","Asia","China","Anhui","Lu'an"
+"NSP6_I50del","NSP6_I50del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11665,"NSP6","I50del",0.00100481354356002,0.100481354356002,"I",50,"del","Asia","China","Anhui","Lu'an"
+"NSP6_K61del","NSP6_K61del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11718,"NSP6","K61del",0.00100937892014028,0.100937892014028,"K",61,"del","Asia","China","Anhui","Lu'an"
+"NSP6_K63del","NSP6_K63del",2020-02-05,"EPI_ISL_1069218","Asia/China/Anhui/Lu'an",11691,"NSP6","K63del",0.00100705316225977,0.100705316225977,"K",63,"del","Asia","China","Anhui","Lu'an"
+"NSP6_L105del","NSP6_L105del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",1826643,"NSP6","L105del",0.157345531560147,15.7345531560147,"L",105,"del","North America","USA","Oklahoma","Oklahoma City"
+"NSP6_S104del","NSP6_S104del",2020-03-17,"EPI_ISL_525538","Europe/France/Auvergne-Rhone-Alpes/Lyon",12787,"NSP6","S104del",0.00110146170437223,0.110146170437223,"S",104,"del","Europe","France","Auvergne-Rhone-Alpes","Lyon"
+"NSP6_S106del","NSP6_S106del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",6504001,"NSP6","S106del",0.560249317799223,56.0249317799223,"S",106,"del","North America","USA","Oklahoma","Oklahoma City"
+"N_E31del","N_E31del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5205718,"N","E31del",0.448416283785186,44.8416283785186,"E",31,"del","North America","USA","Oklahoma","Oklahoma City"
+"N_G30del","N_G30del",2020-12-29,"EPI_ISL_900527","Europe/France/Auvergne-Rhone-Alpes/Le Puy-en-Velay",144137,"N","G30del",0.0124158430971377,1.24158430971377,"G",30,"del","Europe","France","Auvergne-Rhone-Alpes","Le Puy-en-Velay"
+"N_R32del","N_R32del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5210206,"N","R32del",0.448802876428435,44.8802876428435,"R",32,"del","North America","USA","Oklahoma","Oklahoma City"
+"N_S33del","N_S33del",2020-01-27,"EPI_ISL_17121378","North America/USA/Oklahoma/Oklahoma City",5066152,"N","S33del",0.436394182883301,43.6394182883301,"S",33,"del","North America","USA","Oklahoma","Oklahoma City"
+"Spike_A243del","Spike_A243del",2020-02-08,"EPI_ISL_451369","Asia/China/Sichuan",41342,"Spike","A243del",0.00356116601096087,0.356116601096087,"A",243,"del","Asia","China","Sichuan",NA
+"Spike_E156del","Spike_E156del",2020-11-02,"EPI_ISL_2161071","Asia/South Korea",14458,"Spike","E156del",0.00124540027542142,0.124540027542142,"E",156,"del","Asia","South Korea",NA,NA
+"Spike_F157del","Spike_F157del",2020-03-12,"EPI_ISL_6661895","North America/USA/New York/Westchester County",3620691,"Spike","F157del",0.311883356523436,31.1883356523436,"F",157,"del","North America","USA","New York","Westchester County"
+"Spike_H69del","Spike_H69del",2020-01-05,"EPI_ISL_434692","Asia/Thailand/Nonthaburi",4437115,"Spike","H69del",0.382209451035862,38.2209451035862,"H",69,"del","Asia","Thailand","Nonthaburi",NA
+"Spike_L242del","Spike_L242del",2020-03-27,"EPI_ISL_2274264","Asia/Qatar/Doha",35578,"Spike","L242del",0.00306465977306288,0.306465977306288,"L",242,"del","Asia","Qatar","Doha",NA
+"Spike_L244del","Spike_L244del",2020-02-08,"EPI_ISL_451369","Asia/China/Sichuan",38907,"Spike","L244del",0.00335141710581139,0.335141710581139,"L",244,"del","Asia","China","Sichuan",NA
+"Spike_L24del","Spike_L24del",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3400398,"Spike","L24del",0.292907497976375,29.2907497976375,"L",24,"del","Europe","France","Grand Est",NA
+"Spike_N211del","Spike_N211del",2020-03-23,"EPI_ISL_15026478","North America/USA/Iowa",1698156,"Spike","N211del",0.146277766641896,14.6277766641896,"N",211,"del","North America","USA","Iowa",NA
+"Spike_P25del","Spike_P25del",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3401698,"Spike","P25del",0.293019478911363,29.3019478911363,"P",25,"del","Europe","France","Grand Est",NA
+"Spike_P26del","Spike_P26del",2020-03-28,"EPI_ISL_12269393","Europe/France/Grand Est",3402228,"Spike","P26del",0.293065132677165,29.3065132677165,"P",26,"del","Europe","France","Grand Est",NA
+"Spike_R158del","Spike_R158del",2020-03-12,"EPI_ISL_6661895","North America/USA/New York/Westchester County",3617230,"Spike","R158del",0.311585228818828,31.1585228818828,"R",158,"del","North America","USA","New York","Westchester County"
+"Spike_V143del","Spike_V143del",2020-02-25,"EPI_ISL_479852","Asia/Japan/Kanto",1814251,"Spike","V143del",0.156278094832175,15.6278094832175,"V",143,"del","Asia","Japan","Kanto",NA
+"Spike_V70del","Spike_V70del",2020-01-05,"EPI_ISL_434692","Asia/Thailand/Nonthaburi",4440872,"Spike","V70del",0.382533075937976,38.2533075937976,"V",70,"del","Asia","Thailand","Nonthaburi",NA
+"Spike_Y144del","Spike_Y144del",2020-01-27,"EPI_ISL_413522","Asia/India/Maharashtra",3155583,"Spike","Y144del",0.271819334438729,27.1819334438729,"Y",144,"del","Asia","India","Maharashtra",NA
+"Spike_Y145del","Spike_Y145del",2020-03-30,"EPI_ISL_429978","North America/USA/Virginia",1809622,"Spike","Y145del",0.155879356564439,15.5879356564439,"Y",145,"del","North America","USA","Virginia",NA
