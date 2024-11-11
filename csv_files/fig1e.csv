@@ -1,0 +1,5 @@
+﻿time_period,mutation_type,count
+before_march2020,four-fold degenerate sites,1047
+before_march2020,not four-fold degenerate sites,5227
+after_march2020,four-fold degenerate sites,587
+after_march2020,not four-fold degenerate sites,2296
