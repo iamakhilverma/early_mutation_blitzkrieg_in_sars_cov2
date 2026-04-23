@@ -134,8 +134,19 @@ if (file.exists(exclude_file)) {
   msg("  Excluded additional problematic sequences: %d (wastewater, cell-passaged, misdated)", n_removed)
 }
 
+# De-duplicate by AccessionID (Nextclade occasionally emits >1 row per sequence;
+# metadata is already unique). Keep first. This ensures every downstream count
+# — NSEQS, mutation frequencies, sequence_list — treats each sequence exactly once.
+n_before_dedup <- nrow(nc2)
+nc2 <- unique(nc2, by = "AccessionID")
+n_dedup_removed <- n_before_dedup - nrow(nc2)
+if (n_dedup_removed > 0) {
+  msg("  Removed %s duplicate-AccessionID rows (Nextclade-side dups)",
+      format(n_dedup_removed, big.mark = ","))
+}
+
 NSEQS <- nrow(nc2)
-msg("  After QC + exclusions: %s", format(NSEQS, big.mark = ","))
+msg("  After QC + exclusions + dedup: %s", format(NSEQS, big.mark = ","))
 msg("\n  >>> TOTAL RETAINED: %s <<<", format(NSEQS, big.mark = ","))
 
 # =============================================================================
@@ -281,26 +292,56 @@ fwrite(aa_second, file.path(SECOND_DIR, "aa_second_occurrence.csv"))
 msg("  AA second-occurrence rows: %d", nrow(aa_second))
 rm(aa_by_date, aa_first, aa_second); gc()
 
-# OWID → world_infections.csv + vaccination_data.csv
-if (file.exists(OWID_FILE)) {
-  owid <- fread(OWID_FILE)
-  world <- owid[location == "World", .(
+# Build world_infections.csv as NEJM (Dec 1 2019 – Jan 21 2020) + OWID (Jan 22+).
+# Prefer reference_data/world_infections_owid_raw.csv (a daily-granularity OWID
+# snapshot kept in the repo) — current owid-covid-data.csv has weekly-aggregated
+# values for early 2020 which would distort Fig 1C/D.
+NEJM_FILE     <- file.path(PROJECT_DIR, "reference_data", "nejm_early_cases.csv")
+OWID_RAW_FILE <- file.path(PROJECT_DIR, "reference_data", "world_infections_owid_raw.csv")
+
+if (file.exists(NEJM_FILE) && file.exists(OWID_RAW_FILE)) {
+  nejm <- fread(NEJM_FILE)[, .(collection_date = as.Date(collection_date),
+                                new_cases = as.numeric(new_cases))]
+  owid_raw <- fread(OWID_RAW_FILE)[, .(collection_date = as.Date(collection_date),
+                                        new_cases = as.numeric(new_cases))]
+  owid_post <- owid_raw[collection_date >= as.Date("2020-01-22")]
+  world <- rbindlist(list(nejm, owid_post), use.names = TRUE)
+  setorder(world, collection_date)
+  world[, total_cases := cumsum(new_cases)]
+  world[, new_cases_smoothed := round(frollmean(new_cases, 7, na.rm = TRUE,
+                                                align = "right"), 2)]
+  world[is.na(new_cases_smoothed), new_cases_smoothed := 0]
+  world <- world[collection_date >= START_DATE & collection_date <= END_DATE]
+  fwrite(world, file.path(OUT_DIR, "world_infections.csv"))
+  msg("  Infections (NEJM + OWID-snapshot merge): %d rows", nrow(world))
+} else if (file.exists(OWID_FILE)) {
+  owid_full <- fread(OWID_FILE)
+  world <- owid_full[location == "World", .(
     collection_date = as.Date(date),
     new_cases = fifelse(is.na(new_cases), 0, new_cases),
     new_cases_smoothed = fifelse(is.na(new_cases_smoothed), 0, new_cases_smoothed),
     total_cases = total_cases)]
   world <- world[collection_date >= START_DATE & collection_date <= END_DATE]
   fwrite(world, file.path(OUT_DIR, "world_infections.csv"))
-  vacc <- owid[location == "World" & !is.na(people_fully_vaccinated_per_hundred),
-               .(collection_date = as.Date(date),
-                 pct_fully_vaccinated = people_fully_vaccinated_per_hundred)]
+  msg("  Infections (OWID only — fallback, NEJM/OWID-snapshot missing): %d rows", nrow(world))
+  rm(owid_full)
+}
+
+# Vaccination data still comes from full OWID file
+if (file.exists(OWID_FILE)) {
+  owid_full <- fread(OWID_FILE)
+  vacc <- owid_full[location == "World" & !is.na(people_fully_vaccinated_per_hundred),
+                    .(collection_date = as.Date(date),
+                      pct_fully_vaccinated = people_fully_vaccinated_per_hundred)]
   vacc <- vacc[collection_date >= START_DATE & collection_date <= END_DATE]
   fwrite(vacc, file.path(OUT_DIR, "vaccination_data.csv"))
-  msg("  OWID: %d infection rows, %d vaccination rows", nrow(world), nrow(vacc))
-  rm(owid, world, vacc)
+  msg("  Vaccination: %d rows", nrow(vacc))
+  rm(owid_full, vacc)
 } else {
-  msg("  OWID not found (non-critical) at %s", OWID_FILE)
+  msg("  OWID file not found at %s — skipping vaccination_data.csv", OWID_FILE)
 }
+if (exists("world")) rm(world)
+if (exists("owid"))  rm(owid)
 
 # Summary
 summary_text <- sprintf(

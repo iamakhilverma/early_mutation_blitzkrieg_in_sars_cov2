@@ -51,3 +51,6 @@ verification_report.md
 # Starting-cohort fingerprint (do not publish; GISAID redistribution restrictions)
 raw_data/raw_accession_ids.txt.gz
 raw_data/raw_metadata_summary.tsv.gz
+
+# Jupyter
+.ipynb_checkpoints/
