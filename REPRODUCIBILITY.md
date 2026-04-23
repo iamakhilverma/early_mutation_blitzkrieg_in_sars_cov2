@@ -11,18 +11,22 @@ If you just want to see or verify the figures, use Path A.
 
 ## 1. Software prerequisites
 
-| Tool | Version | Used for |
-|---|---|---|
-| R | ≥ 4.3.3 | Processing + figures |
-| R packages | `data.table`, `stringr`, `tidyverse`, `ggplot2`, `patchwork`, `ggpubr`, `ggrepel` | — |
-| Python | ≥ 3.10 | Prefilter + OWID fetch + variant-date audit |
-| Python packages | `pandas`, `biopython`, `pyarrow`, `owid-catalog` | — |
-| Nextclade | v3 (via Apptainer) | Mutation calling |
-| Apptainer | ≥ 1.3 | Container runtime |
-| LSF (optional) | — | HPC submit templates |
+R + Python in one shot — [`environment.yml`](environment.yml):
 
-A Conda environment (`av3env`) with everything above is what we used; any
-comparable environment works.
+```bash
+conda env create -f environment.yml
+conda activate mutation-tracking
+```
+
+| Tool | Version | Used for | How installed |
+|---|---|---|---|
+| R | 4.3.3 | Processing + figures | `environment.yml` |
+| R packages | `data.table`, `tidyverse`, `patchwork`, `ggpubr`, `ggrepel` | — | `environment.yml` |
+| Python | 3.10 | OWID fetch (scripts 00 and 08 use only stdlib) | `environment.yml` |
+| Python packages | `pandas`, `owid-catalog` | — | `environment.yml` |
+| Nextclade | v3 | Mutation calling | `apptainer pull docker://nextstrain/nextclade` |
+| Apptainer | ≥ 1.3 | Container runtime | Cluster module or system package |
+| LSF (optional) | — | HPC submit templates | Cluster-provided |
 
 ## 2. Dataset
 

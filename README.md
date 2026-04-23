@@ -95,6 +95,10 @@ p < 10⁻⁶). Among those early mutations that ultimately reached ≥1% frequen
 git clone <this-repo-url>
 cd <repo>
 
+# Create the conda env (R + Python pinned to our versions)
+conda env create -f environment.yml
+conda activate mutation-tracking
+
 # Decompress the two heavy per-mutation-by-date tables (optional; fread reads .gz directly)
 gunzip processed_data/substitutions_only/*.gz
 
@@ -116,10 +120,17 @@ Full recipe with HPC details, software versions, and expected outputs is in [REP
 
 ## Software
 
-- **R ≥ 4.3.3** with packages: `data.table`, `stringr`, `tidyverse`, `ggplot2`, `patchwork`, `ggpubr`, `ggrepel`
-- **Python ≥ 3.10** with `pandas`, `biopython`, `pyarrow` (for prefilter), `owid-catalog` (for OWID fetch)
-- **Nextclade v3** (via Apptainer image; `docker://nextstrain/nextclade`)
-- **LSF** submit templates are provided; adapt `-P acc_YOUR_PROJECT` and module names for your cluster.
+Everything on the R/Python side is pinned in [environment.yml](environment.yml) — create the env once with `conda env create -f environment.yml`. Contents:
+
+- **R 4.3.3** with `data.table`, `tidyverse`, `patchwork`, `ggpubr`, `ggrepel`
+- **Python 3.10** with `pandas` + `owid-catalog` (pip). The other Python scripts in `scripts/` use only the standard library.
+
+Installed separately (outside conda):
+
+- **Nextclade v3** via Apptainer image `docker://nextstrain/nextclade` — only needed for the GISAID → processed-data step (stage 2 of the pipeline).
+- **Apptainer ≥ 1.3** — container runtime for Nextclade.
+
+LSF submit templates are provided in `submit/`; edit `-P acc_YOUR_PROJECT` and module names for your cluster.
 
 ## Data
 

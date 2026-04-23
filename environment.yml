@@ -1,0 +1,36 @@
+# Conda environment for this project.
+#
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate mutation-tracking
+#
+# Nextclade v3 and Apptainer are NOT installed here — see REPRODUCIBILITY.md
+# for how to set those up (Apptainer SIF image pulled from docker://nextstrain/nextclade).
+#
+# Versions pinned to minor releases to match the run that produced the figures
+# (R 4.3.3 + sessionInfo() output in scripts/03_generate_figures.R run log).
+# If conda-forge stops serving these minors, the analysis is not sensitive to
+# them — relax to `>=` and re-run; the figures reproduce on current releases
+# too.
+
+name: mutation-tracking
+channels:
+  - conda-forge
+dependencies:
+  # --- Base languages ---
+  - python=3.10
+  - r-base=4.3.3
+
+  # --- R packages used by scripts/02_process_nextclade.R and 03_generate_figures.R ---
+  - r-data.table=1.17
+  - r-tidyverse=2.0          # pulls dplyr, ggplot2, tidyr, readr, purrr, tibble, stringr, forcats, lubridate
+  - r-patchwork=1.3
+  - r-ggpubr=0.6
+  - r-ggrepel=0.9
+
+  # --- Python packages used by scripts/fetch_owid_data.py ---
+  # (00_prefilter_gisaid.py and audit_variant_dates.py use only the stdlib.)
+  - pandas>=2.0
+  - pip
+  - pip:
+      - owid-catalog
