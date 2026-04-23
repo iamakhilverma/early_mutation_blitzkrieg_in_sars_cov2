@@ -44,3 +44,10 @@ reference_data/owid-covid-data.csv
 # Don't commit these auto-generated figure variants if any drift in
 *.jpg
 !figures/*.jpeg
+
+# Verification report (local-only, do not publish)
+verification_report.md
+
+# Starting-cohort fingerprint (do not publish; GISAID redistribution restrictions)
+raw_data/raw_accession_ids.txt.gz
+raw_data/raw_metadata_summary.tsv.gz

@@ -4,7 +4,7 @@ Tables produced by `scripts/02_process_nextclade.R`. If you clone the repo and
 run `scripts/03_generate_figures.R` directly, the figures are built from these
 files (no GISAID access needed).
 
-Strict filter is canonical: **5,633,141 sequences** (high-coverage flag, human
+Strict filter is canonical: **5,628,868 sequences** (high-coverage flag, human
 host, complete date, ≥29 kb, ≤5% N, Nextstrain exclude, Nextclade QC
 good/mediocre, plus 1,883 manual exclusions — wastewater, cell-passaged, misdated).
 
@@ -12,12 +12,12 @@ good/mediocre, plus 1,883 manual exclusions — wastewater, cell-passaged, misda
 
 | File | Rows | Description |
 |---|---:|---|
-| `substitutions_only/nt_first_occurrence.csv` | 10,135 | Every unique NT substitution ≥ 0.01%. Columns: `mutation_name`, `pos`, `ref`, `alt`, `collection_date` (first), `count`, `fraction`, `per_abundance`, `geq_1pct`, `geq_pt1pct`, `geq_pt01pct`, `mutation_type` |
-| `substitutions_only/aa_first_occurrence.csv` | 49,996 | Every unique AA substitution (all frequencies). Use `geq_pt01pct == TRUE` for the 5,653 rows ≥ 0.01%. Adds `aa_label`, `region`, `is_spike` |
+| `substitutions_only/nt_first_occurrence.csv` | 10,147 | Every unique NT substitution ≥ 0.01%. Columns: `mutation_name`, `pos`, `ref`, `alt`, `collection_date` (first), `count`, `fraction`, `per_abundance`, `geq_1pct`, `geq_pt1pct`, `geq_pt01pct`, `mutation_type` |
+| `substitutions_only/aa_first_occurrence.csv` | 49,995 | Every unique AA substitution (all frequencies). Use `geq_pt01pct == TRUE` for the 5,665 rows ≥ 0.01%. Adds `aa_label`, `region`, `is_spike` |
 | `substitutions_only/nt_mutations_by_date.csv.gz` | ~7.5 M | One row per (mutation, collection_date) with daily counts — input for second-occurrence computation. Gzipped to fit the GitHub 100 MB file limit. `fread()` reads `.gz` transparently |
 | `substitutions_only/aa_mutations_by_date.csv.gz` | ~5 M | Same for AA |
 | `second_occurrence/nt_second_occurrence.csv` | 71,050 | Every unique NT mutation with `first_date`, `second_date`, `n_dates`, `gap_days`, `count`, `per_abundance`. Singletons (n_dates = 1) have blank `second_date`/`gap_days` |
-| `second_occurrence/aa_second_occurrence.csv` | 49,996 | Same for AA (8,663 singletons) |
+| `second_occurrence/aa_second_occurrence.csv` | 49,995 | Same for AA (8,663 singletons) |
 
 ## Contextual data
 
@@ -27,7 +27,7 @@ good/mediocre, plus 1,883 manual exclusions — wastewater, cell-passaged, misda
 | `vaccination_data.csv` | OWID | Daily `pct_fully_vaccinated` (World) |
 | `gisaid_daily_sequence_counts.csv` | GISAID | Daily `n_seqs`, `cum_seqs` — full GISAID |
 | `gisaid_monthly_sequence_counts.csv` | GISAID | Same aggregated monthly |
-| `sequence_counts_by_date.csv` | Our cohort | Daily retained-sequence counts in our 5,633,141-sequence cohort |
+| `sequence_counts_by_date.csv` | Our cohort | Daily retained-sequence counts in our 5,628,868-sequence cohort |
 
 ## Exclusions / audit trail
 
@@ -42,7 +42,7 @@ good/mediocre, plus 1,883 manual exclusions — wastewater, cell-passaged, misda
 
 | File | Description |
 |---|---|
-| `nseqs.txt` | Final retained-sequence count: `5633141` |
+| `nseqs.txt` | Final retained-sequence count: `5628868` |
 | `processing_summary.txt` | Phase-1 processing log (substitutions counts per threshold) |
 
 ## Reproducing these files

@@ -24,8 +24,8 @@ No file duplication across directories. `source_data_final/` is small (≈1 MB) 
 | `fig1ab_daily_first_occurrences.csv` | 1A, 1B | 2,223 | `date`, `nt_new_geq_pt01pct`, `aa_new_geq_pt01pct` |
 | `fig1_pie_inset_data.csv` | 1A/1B insets | — | `TimelineLabel`, `name`, `bins`, `countMutations` |
 | `fig1cd_monthly_rates.csv` | 1C, 1D | — | `month_date`, `nt_count`, `aa_count`, `newCases`, `nt_per_1000`, `aa_per_1000`, `flag` |
-| `fig1e_nt_scatter.csv` | 1E | 10,135 | `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
-| `fig1f_aa_scatter.csv` | 1F | 5,653 | `aa_label`, `region`, `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
+| `fig1e_nt_scatter.csv` | 1E | 10,147 | `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
+| `fig1f_aa_scatter.csv` | 1F | 5,665 | `aa_label`, `region`, `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
 
 ### Figure 2 — Jan 15, 2020 cutoff for every panel; D also filtered to ≥ 1% and split at 28 d
 
@@ -61,26 +61,26 @@ No file duplication across directories. `source_data_final/` is small (≈1 MB) 
 
 | File | Rows | Purpose |
 |---|---:|---|
-| `nt_first_occurrence.csv` | 10,135 | Every unique NT substitution ≥ 0.01% with first date, count, frequency |
-| `aa_first_occurrence.csv` | 49,996 | Every unique AA substitution (all frequencies). Filter `geq_pt01pct == TRUE` for 5,653 rows matching the ≥0.01% threshold |
+| `nt_first_occurrence.csv` | 10,147 | Every unique NT substitution ≥ 0.01% with first date, count, frequency |
+| `aa_first_occurrence.csv` | 49,995 | Every unique AA substitution (all frequencies). Filter `geq_pt01pct == TRUE` for 5,665 rows matching the ≥0.01% threshold |
 | `nt_mutations_by_date.csv` | ~7.5 M | Per-mutation-per-date observation counts (NT) — input for second-occurrence computation |
 | `aa_mutations_by_date.csv` | ~5 M | Same for AA |
 | `nt_second_occurrence_full.csv` | 71,050 | Every unique NT mutation with first/second date (includes 7,739 singletons with blank `second_date` / `gap_days`) |
-| `aa_second_occurrence_full.csv` | 49,996 | Every unique AA mutation with first/second date (8,663 singletons) |
+| `aa_second_occurrence_full.csv` | 49,995 | Every unique AA mutation with first/second date (8,663 singletons) |
 | `nt_second_occurrence_jan15_plotted.csv` | 101 | The NT subset first-seen ≤ Jan 15 with a second occurrence — matches `fig2a_nt_scatter.csv` |
 | `aa_second_occurrence_jan15_plotted.csv` | 51 | Analogous for AA |
 | `world_infections.csv` | 2,223 | Daily global new-case counts (NEJM Dec '19 – Jan 21, 2020 + OWID from Jan 22 onward) |
 | `vaccination_data.csv` | — | OWID daily `pct_fully_vaccinated` (World) |
 | `gisaid_daily_sequence_counts.csv` | ~2,170 | Daily GISAID sequence deposits (complete set before our filter) |
 | `gisaid_monthly_sequence_counts.csv` | — | Monthly aggregate of the above |
-| `sequence_counts_by_date.csv` | — | Daily retained-sequence counts in our 5,633,141-sequence cohort |
+| `sequence_counts_by_date.csv` | — | Daily retained-sequence counts in our 5,628,868-sequence cohort |
 | `exclude_additional.txt` | 1,883 | Accession IDs of manual exclusions |
 | `excluded_sequences_detail.csv` | 1,883 | Per-sequence reason (wastewater / cell-passaged / misdated) |
 | `audit_misdated_variants.csv` | 11 | Per-sequence flags for mis-dated VOI / sub-lineage |
 | `audit_new_exclusions.txt` | — | Summary of the latest exclusion audit |
 | `variant_emergence_dates.csv` | 27 | Curated WHO/GISAID/Nextstrain variant emergence dates |
 | `nejm_early_cases.csv` | — | Daily symptom-onset counts (Li et al., NEJM 2020 Fig 1) |
-| `nseqs.txt` | 1 | Final retained-sequence count: 5633141 |
+| `nseqs.txt` | 1 | Final retained-sequence count: 5628868 |
 | `processing_summary.txt` | — | Brief Phase 1 processing log |
 
 ---

@@ -148,9 +148,9 @@ been refreshed or the emergence-dates table has been updated.
 
 | Check | Expected value |
 |---|---|
-| Final retained sequences (`processed_data/nseqs.txt`) | 5,633,141 |
-| Unique NT substitutions ≥ 0.01% | 10,135 |
-| Unique AA substitutions ≥ 0.01% | 5,653 |
+| Final retained sequences (`processed_data/nseqs.txt`) | 5,628,868 |
+| Unique NT substitutions ≥ 0.01% | 10,147 |
+| Unique AA substitutions ≥ 0.01% | 5,665 |
 | Manual exclusions | 1,883 (1,846 wastewater/Vero + 26 misdated VOC + 11 misdated VOI) |
 | Fig 2A (NT scatter) points | 101 |
 | Fig 2B (AA scatter) points | 51 |

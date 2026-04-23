@@ -12,25 +12,25 @@ Jan-20,nt.geq1,Dec-19 to Mar-20,37
 Jan-20,nt.geqpt01,Dec-19 to Mar-20,383
 Jan-20,nt.geqpt1,Dec-19 to Mar-20,172
 Feb-20,aa.geq1,Dec-19 to Mar-20,20
-Feb-20,aa.geqpt01,Dec-19 to Mar-20,339
+Feb-20,aa.geqpt01,Dec-19 to Mar-20,340
 Feb-20,aa.geqpt1,Dec-19 to Mar-20,119
 Feb-20,nt.geq1,Dec-19 to Mar-20,37
-Feb-20,nt.geqpt01,Dec-19 to Mar-20,643
+Feb-20,nt.geqpt01,Dec-19 to Mar-20,644
 Feb-20,nt.geqpt1,Dec-19 to Mar-20,263
 Mar-20,aa.geq1,Dec-19 to Mar-20,66
-Mar-20,aa.geqpt01,Dec-19 to Mar-20,2925
+Mar-20,aa.geqpt01,Dec-19 to Mar-20,2929
 Mar-20,aa.geqpt1,Dec-19 to Mar-20,618
 Mar-20,nt.geq1,Dec-19 to Mar-20,105
-Mar-20,nt.geqpt01,Dec-19 to Mar-20,5086
+Mar-20,nt.geqpt01,Dec-19 to Mar-20,5088
 Mar-20,nt.geqpt1,Dec-19 to Mar-20,1137
 Apr-20,aa.geq1,Rest,19
-Apr-20,aa.geqpt01,Rest,979
+Apr-20,aa.geqpt01,Rest,980
 Apr-20,aa.geqpt1,Rest,89
 Apr-20,nt.geq1,Rest,24
-Apr-20,nt.geqpt01,Rest,1779
+Apr-20,nt.geqpt01,Rest,1781
 Apr-20,nt.geqpt1,Rest,140
 May-20,aa.geq1,Rest,1
-May-20,aa.geqpt01,Rest,317
+May-20,aa.geqpt01,Rest,319
 May-20,aa.geqpt1,Rest,23
 May-20,nt.geq1,Rest,2
 May-20,nt.geqpt01,Rest,623
@@ -39,25 +39,25 @@ Jun-20,aa.geq1,Rest,7
 Jun-20,aa.geqpt01,Rest,226
 Jun-20,aa.geqpt1,Rest,21
 Jun-20,nt.geq1,Rest,7
-Jun-20,nt.geqpt01,Rest,434
+Jun-20,nt.geqpt01,Rest,435
 Jun-20,nt.geqpt1,Rest,33
 Jul-20,aa.geq1,Rest,8
-Jul-20,aa.geqpt01,Rest,175
+Jul-20,aa.geqpt01,Rest,177
 Jul-20,aa.geqpt1,Rest,19
 Jul-20,nt.geq1,Rest,9
-Jul-20,nt.geqpt01,Rest,334
+Jul-20,nt.geqpt01,Rest,337
 Jul-20,nt.geqpt1,Rest,32
 Aug-20,aa.geq1,Rest,5
-Aug-20,aa.geqpt01,Rest,124
+Aug-20,aa.geqpt01,Rest,125
 Aug-20,aa.geqpt1,Rest,12
 Aug-20,nt.geq1,Rest,7
-Aug-20,nt.geqpt01,Rest,233
+Aug-20,nt.geqpt01,Rest,234
 Aug-20,nt.geqpt1,Rest,16
 Sep-20,aa.geq1,Rest,3
-Sep-20,aa.geqpt01,Rest,72
+Sep-20,aa.geqpt01,Rest,73
 Sep-20,aa.geqpt1,Rest,10
 Sep-20,nt.geq1,Rest,4
-Sep-20,nt.geqpt01,Rest,147
+Sep-20,nt.geqpt01,Rest,148
 Sep-20,nt.geqpt1,Rest,15
 Oct-20,aa.geq1,Rest,3
 Oct-20,aa.geqpt01,Rest,80
@@ -117,7 +117,7 @@ Jul-21,aa.geq1,Rest,0
 Jul-21,aa.geqpt01,Rest,3
 Jul-21,aa.geqpt1,Rest,0
 Jul-21,nt.geq1,Rest,0
-Jul-21,nt.geqpt01,Rest,3
+Jul-21,nt.geqpt01,Rest,4
 Jul-21,nt.geqpt1,Rest,0
 Aug-21,aa.geq1,Rest,0
 Aug-21,aa.geqpt01,Rest,0

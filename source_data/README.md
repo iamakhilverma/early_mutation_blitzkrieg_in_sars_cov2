@@ -11,8 +11,8 @@ no singleton rows, no auxiliary columns.
 | `fig1ab_daily_first_occurrences.csv` | 1A, 1B | 2,223 | Daily counts of new NT (≥0.01%) and AA (≥0.01%) first-occurrences, `date`, `nt_new_geq_pt01pct`, `aa_new_geq_pt01pct` |
 | `fig1_pie_inset_data.csv` | 1A/1B insets | — | Dec-19-to-Mar-20 vs Rest proportions (per NT/AA threshold) |
 | `fig1cd_monthly_rates.csv` | 1C, 1D | — | Monthly: `month_date`, `nt_count`, `aa_count`, `newCases`, `nt_per_1000`, `aa_per_1000`, `flag` |
-| `fig1e_nt_scatter.csv` | 1E | 10,135 | Unique NT substitutions ≥0.01%: `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
-| `fig1f_aa_scatter.csv` | 1F | 5,653 | Unique AA substitutions ≥0.01%: `aa_label`, `region`, `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
+| `fig1e_nt_scatter.csv` | 1E | 10,147 | Unique NT substitutions ≥0.01%: `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
+| `fig1f_aa_scatter.csv` | 1F | 5,665 | Unique AA substitutions ≥0.01%: `aa_label`, `region`, `mutation_name`, `pos`, `ref`, `alt`, `collection_date`, `count`, `per_abundance` |
 
 ## Figure 2 (Jan 15, 2020 cutoff; panel D ≥1%, ≤28d heuristic)
 

@@ -8,8 +8,9 @@ Strict filter is canonical for the manuscript. The lenient branch and the predic
 |---|---:|
 | GISAID bulk download (Feb 2026) | 17,564,626 |
 | After prefilter (high-coverage, human, complete date, ≥29 kb, ≤5% N, Nextstrain exclude) | 5,732,294 |
-| After Nextclade QC (good / mediocre) | 5,635,025 |
-| After manual exclusions (wastewater, Vero-passaged, misdated VOC/VOI) | **5,633,141** |
+| After Nextclade QC (good / mediocre) — row count | 5,635,025 |
+| After manual exclusions (1,883 wastewater / Vero-passaged / misdated VOC/VOI) | 5,633,141 |
+| After de-duplication by GISAID accession ID (4,273 duplicate Nextclade rows collapsed) | **5,628,868** |
 
 ### Exclusions breakdown
 
@@ -25,7 +26,7 @@ Strict filter is canonical for the manuscript. The lenient branch and the predic
 
 | Threshold | NT | AA |
 |---|---:|---:|
-| Total unique (≥ 0.01%) | 10,135 | 5,653 |
+| Total unique (≥ 0.01%) | 10,147 | 5,665 |
 | ≥ 0.1% | 1,911 | 1,054 |
 | ≥ 1% | 246 | 166 |
 | ≥ 10% | 61 | 48 |

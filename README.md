@@ -1,7 +1,7 @@
 # Early mutation dynamics of SARS-CoV-2
 
 Code, processed data, and figures for the manuscript on early-pandemic SARS-CoV-2
-mutation dynamics (5,633,141 high-coverage GISAID sequences, December 2019 –
+mutation dynamics (5,628,868 high-coverage GISAID sequences, December 2019 –
 December 2025).
 
 **Central finding.** Of nucleotide and amino acid substitutions first detected by
@@ -50,7 +50,7 @@ p < 10⁻⁶). Among those early mutations that ultimately reached ≥1% frequen
 │   ├── exclude_additional.txt     1,883 manually-excluded accessions
 │   ├── excluded_sequences_detail.csv
 │   ├── audit_misdated_variants.csv
-│   ├── nseqs.txt                  5633141
+│   ├── nseqs.txt                  5628868
 │   └── processing_summary.txt
 │
 ├── source_data/                   Exact data plotted in each figure panel (≈1 MB)
