@@ -1,0 +1,46 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Renviron
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Reproducibility — generated / large / private files
+logs/
+*.log
+.bak.*
+*.bak
+
+# Raw GISAID data is not redistributable
+raw_data/metadata.tsv
+raw_data/sequences.fasta
+filtered_data/filtered_metadata.tsv
+filtered_data/filtered_sequences.fasta
+filtered_data/prefilter_report.txt
+
+# Intermediate Nextclade output (regenerable; ~28 GB)
+nextclade_output/
+containers/
+
+# OWID data (fetched by scripts/fetch_owid_data.py; ~450 MB)
+reference_data/owid-covid-data.csv
+
+# Don't commit these auto-generated figure variants if any drift in
+*.jpg
+!figures/*.jpeg

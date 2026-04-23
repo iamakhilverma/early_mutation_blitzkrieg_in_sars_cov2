@@ -1,0 +1,13 @@
+Phase 1 Processing Summary
+===================================================
+Date: 2026-03-22 18:04:47.253914 | Window: 2019-12-01 to 2025-12-31
+Sequences: 5,633,141 retained of 15,543,173 input
+
+SUBSTITUTIONS:
+  NT pairs: 223,638,171 | Unique ≥0.01%%: 10135 | ≥0.1%%: 1911 | ≥1%%: 246
+  AA pairs: 165,937,274 | Unique ≥0.01%%: 5653 | ≥0.1%%: 1054 | ≥1%%: 166 | Spike: 7049
+
+INDELS:
+  AA dels: 25,502,142 pairs (7202 unique) | AA ins: 51,832 pairs (1790 unique)
+  NT dels: 14,977,299 pairs (14597 unique) | NT ins: 222,810 pairs (12415 unique)
+

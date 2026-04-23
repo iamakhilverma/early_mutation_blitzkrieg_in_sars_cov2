@@ -1,0 +1,5 @@
+type,days_group,n,pct
+AA mutations,<=28 days,15,0.789473684210526
+AA mutations,>28 days,4,0.210526315789474
+NT mutations,<=28 days,22,0.846153846153846
+NT mutations,>28 days,4,0.153846153846154
