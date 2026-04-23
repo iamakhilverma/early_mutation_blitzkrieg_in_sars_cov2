@@ -1,148 +1,171 @@
 #!/usr/bin/env python3
 """
-Audit: Find sequences with collection dates before their variant's emergence.
+Audit: flag sequences whose collection date precedes their Pango lineage's
+earliest documented emergence — strong evidence of a misdated or misassigned
+sample.
 
-Uses variant_emergence_dates.csv (curated from WHO/GISAID/Nextstrain sources)
-to flag sequences that claim to be a variant before that variant could have
-existed — strong evidence of misdated collection or misassignment.
+This script produced the `audit_misdated_variants.csv` and the 11 sub-lineage
+accessions appended to `exclude_additional.txt` that ship with this repository.
+You do NOT need to re-run it unless you refresh the GISAID metadata — the
+bundled exclusion list is already applied by scripts/02_process_nextclade.R.
 
-Handles Pango aliases:
-  Q.*   = B.1.1.7.* (Alpha sub-lineages)
-  AY.*  = B.1.617.2.* (Delta sub-lineages)
-  BA.*  = B.1.1.529.* (Omicron sub-lineages, handled via sub-lineage entries)
+If you do want to re-run it, you need a `sequence_list.csv` that has columns
+(AccessionID, collection_date, lineage). Pass its path via --sequence-list.
+That file is not included in this repo (it's per-sequence metadata derived
+from GISAID, whose terms prohibit redistribution of per-sequence data).
 
-Output: list of accessions + reasons for exclusion
+Usage
+-----
+    python3 scripts/audit_variant_dates.py \\
+        --sequence-list    path/to/sequence_list.csv \\
+        --emergence-dates  reference_data/variant_emergence_dates.csv \\
+        --existing-exclude processed_data/exclude_additional.txt \\
+        --out-csv          processed_data/audit_misdated_variants.csv \\
+        --out-txt          processed_data/audit_new_exclusions.txt
+
+Pango alias handling
+--------------------
+Q.*   → B.1.1.7.*    (Alpha sub-lineages)
+AY.*  → B.1.617.2.*  (Delta sub-lineages)
+BA.*  → B.1.1.529.*  (Omicron sub-lineages — covered via the sub-lineage rows
+                      in variant_emergence_dates.csv)
 """
 
+import argparse
 import csv
 import sys
 from collections import defaultdict
 from datetime import datetime
 
-PROJECT_DIR = "/sc/arion/projects/Tsankov_Normal_Lung/users/akhil/projects/av/projects/mutation_tracking"
 
-# ── Load variant emergence dates ──
-emergence = {}  # lineage_prefix → (impossible_before_date, label)
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__,
+                                formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--sequence-list",    required=True,
+                   help="CSV with AccessionID, collection_date, lineage columns.")
+    p.add_argument("--emergence-dates",  default="reference_data/variant_emergence_dates.csv")
+    p.add_argument("--existing-exclude", default="processed_data/exclude_additional.txt",
+                   help="Optional — accessions already in this list are flagged as 'already_excluded'.")
+    p.add_argument("--out-csv", default="processed_data/audit_misdated_variants.csv")
+    p.add_argument("--out-txt", default="processed_data/audit_new_exclusions.txt")
+    return p.parse_args()
 
-with open(f"{PROJECT_DIR}/raw_data/variant_emergence_dates.csv") as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        label = row["who_label"]
-        impossible = row["impossible_before_date"]
-        pango = row["pango_lineage"]
 
-        # Handle semicolon-separated lineages (e.g., Epsilon: B.1.427;B.1.429)
-        for lin in pango.split(";"):
-            lin = lin.strip()
-            emergence[lin] = (impossible, label)
+def load_emergence(path):
+    emergence = {}  # lineage_prefix -> (impossible_before_date, label)
+    with open(path) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            label = row["who_label"]
+            impossible = row["impossible_before_date"]
+            pango = row["pango_lineage"]
+            for lin in pango.split(";"):
+                lin = lin.strip()
+                if lin:
+                    emergence[lin] = (impossible, label)
+    # Manual aliases
+    if "B.1.1.7" in emergence:
+        emergence["Q"] = (emergence["B.1.1.7"][0], "Alpha (Q alias)")
+    if "B.1.617.2" in emergence:
+        emergence["AY"] = (emergence["B.1.617.2"][0], "Delta (AY alias)")
+    return emergence
 
-# Add Pango aliases manually
-# Q.* = B.1.1.7.* (Alpha sub-lineages)
-emergence["Q"] = (emergence["B.1.1.7"][0], "Alpha (Q alias)")
-# AY.* = B.1.617.2.* (Delta sub-lineages)
-emergence["AY"] = (emergence["B.1.617.2"][0], "Delta (AY alias)")
 
-print(f"Loaded {len(emergence)} lineage prefixes to check")
-for lin, (date, label) in sorted(emergence.items()):
-    print(f"  {lin:<15s} impossible before {date}  ({label})")
+def load_existing(path):
+    try:
+        with open(path) as f:
+            return {line.strip() for line in f if line.strip()}
+    except FileNotFoundError:
+        return set()
 
-# ── Load existing exclusion list ──
-existing_excluded = set()
-try:
-    with open(f"{PROJECT_DIR}/processed_data/exclude_additional.txt") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                existing_excluded.add(line)
+
+def main():
+    args = parse_args()
+
+    emergence = load_emergence(args.emergence_dates)
+    print(f"Loaded {len(emergence)} lineage prefixes to check")
+    for lin, (date, label) in sorted(emergence.items()):
+        print(f"  {lin:<15s} impossible before {date}  ({label})")
+
+    existing_excluded = load_existing(args.existing_exclude)
     print(f"\nExisting exclusion list: {len(existing_excluded)} accessions")
-except FileNotFoundError:
-    print("\nNo existing exclusion list found")
 
-# ── Scan sequence_list.csv ──
-print(f"\nScanning sequence_list.csv...")
+    print(f"\nScanning {args.sequence_list} ...")
+    flagged = []
+    n_scanned = 0
+    lineage_counts = defaultdict(int)
 
-flagged = []
-n_scanned = 0
-lineage_counts = defaultdict(int)
+    with open(args.sequence_list) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            n_scanned += 1
+            if n_scanned % 1_000_000 == 0:
+                print(f"  ... {n_scanned:,} sequences scanned")
 
-with open(f"{PROJECT_DIR}/processed_data/sequence_list.csv") as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        n_scanned += 1
-        if n_scanned % 1_000_000 == 0:
-            print(f"  ... {n_scanned:,} sequences scanned")
+            acc = row["AccessionID"]
+            date_str = row["collection_date"]
+            lineage = row["lineage"]
+            if not lineage or lineage == "unassigned" or not date_str:
+                continue
 
-        acc = row["AccessionID"]
-        date_str = row["collection_date"]
-        lineage = row["lineage"]
+            for prefix, (impossible_before, label) in emergence.items():
+                if lineage == prefix or lineage.startswith(prefix + "."):
+                    coll_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+                    cutoff = datetime.strptime(impossible_before, "%Y-%m-%d").date()
+                    if coll_date < cutoff:
+                        flagged.append({
+                            "accession": acc,
+                            "collection_date": date_str,
+                            "lineage": lineage,
+                            "variant_label": label,
+                            "impossible_before": impossible_before,
+                            "already_excluded": acc in existing_excluded,
+                        })
+                        lineage_counts[label] += 1
+                    break
 
-        if not lineage or lineage == "unassigned" or not date_str:
-            continue
+    print(f"\nScanned {n_scanned:,} sequences total")
+    print(f"Flagged {len(flagged)} sequences with impossible dates")
 
-        # Check each emergence rule
-        for prefix, (impossible_before, label) in emergence.items():
-            # Match: lineage == prefix exactly, or lineage starts with prefix.
-            if lineage == prefix or lineage.startswith(prefix + "."):
-                coll_date = datetime.strptime(date_str, "%Y-%m-%d").date()
-                cutoff = datetime.strptime(impossible_before, "%Y-%m-%d").date()
+    print(f"\n{'Variant':<30s} {'Count':>6s}  {'New':>4s}  Impossible before")
+    print("-" * 80)
+    new_total = 0
+    for label in sorted(lineage_counts.keys()):
+        count = lineage_counts[label]
+        new_count = sum(1 for f in flagged if f["variant_label"] == label and not f["already_excluded"])
+        new_total += new_count
+        imp_date = next(f["impossible_before"] for f in flagged if f["variant_label"] == label)
+        print(f"  {label:<28s} {count:>6d}  {new_count:>4d}  {imp_date}")
+    print(f"\n  {'TOTAL':<28s} {len(flagged):>6d}  {new_total:>4d}")
 
-                if coll_date < cutoff:
-                    already = acc in existing_excluded
-                    flagged.append({
-                        "accession": acc,
-                        "collection_date": date_str,
-                        "lineage": lineage,
-                        "variant_label": label,
-                        "impossible_before": impossible_before,
-                        "already_excluded": already,
-                    })
-                    lineage_counts[label] += 1
-                break  # Only need to match one rule per sequence
+    new_flagged = [f for f in flagged if not f["already_excluded"]]
 
-print(f"\nScanned {n_scanned:,} sequences total")
-print(f"Flagged {len(flagged)} sequences with impossible dates")
+    if not new_flagged:
+        print("\nNo NEW misdated sequences found beyond existing exclusion list.")
+        return
 
-# ── Summary by variant ──
-print(f"\n{'Variant':<30s} {'Count':>6s}  {'New':>4s}  Impossible before")
-print("-" * 80)
-new_total = 0
-for label in sorted(lineage_counts.keys()):
-    count = lineage_counts[label]
-    new_count = sum(1 for f in flagged if f["variant_label"] == label and not f["already_excluded"])
-    new_total += new_count
-    # Find the impossible_before for this label
-    imp_date = [f["impossible_before"] for f in flagged if f["variant_label"] == label][0]
-    print(f"  {label:<28s} {count:>6d}  {new_count:>4d}  {imp_date}")
-
-print(f"\n  {'TOTAL':<28s} {len(flagged):>6d}  {new_total:>4d}")
-
-# ── Write new flagged accessions ──
-new_flagged = [f for f in flagged if not f["already_excluded"]]
-
-if new_flagged:
-    outpath = f"{PROJECT_DIR}/processed_data/audit_misdated_variants.csv"
-    with open(outpath, "w", newline="") as f:
+    with open(args.out_csv, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["accession", "collection_date", "lineage",
-                                                "variant_label", "impossible_before", "already_excluded"])
+                                               "variant_label", "impossible_before", "already_excluded"])
         writer.writeheader()
         for row in flagged:
             writer.writerow(row)
-    print(f"\nFull details written to: {outpath}")
+    print(f"\nFull details written to: {args.out_csv}")
 
-    new_ids_path = f"{PROJECT_DIR}/processed_data/audit_new_exclusions.txt"
-    with open(new_ids_path, "w") as f:
+    with open(args.out_txt, "w") as f:
         for row in new_flagged:
             f.write(row["accession"] + "\n")
-    print(f"New accession IDs to exclude: {new_ids_path} ({len(new_flagged)} IDs)")
-else:
-    print("\nNo NEW misdated sequences found beyond existing exclusion list.")
+    print(f"New accession IDs to exclude: {args.out_txt} ({len(new_flagged)} IDs)")
 
-# ── Show some examples ──
-if flagged:
-    print(f"\nExample flagged sequences:")
-    for f in flagged[:20]:
-        status = " [ALREADY EXCLUDED]" if f["already_excluded"] else " [NEW]"
-        print(f"  {f['accession']}  {f['collection_date']}  {f['lineage']:<15s}  "
-              f"{f['variant_label']:<20s}  before {f['impossible_before']}{status}")
-    if len(flagged) > 20:
-        print(f"  ... and {len(flagged) - 20} more")
+    if flagged:
+        print("\nExample flagged sequences:")
+        for row in flagged[:20]:
+            status = " [ALREADY EXCLUDED]" if row["already_excluded"] else " [NEW]"
+            print(f"  {row['accession']}  {row['collection_date']}  {row['lineage']:<15s}  "
+                  f"{row['variant_label']:<20s}  before {row['impossible_before']}{status}")
+        if len(flagged) > 20:
+            print(f"  ... and {len(flagged) - 20} more")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

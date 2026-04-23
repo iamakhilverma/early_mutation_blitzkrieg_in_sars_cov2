@@ -22,9 +22,9 @@ PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "${PROJECT_DIR}"
 mkdir -p logs
 
-# R environment — adapt module / env name to your cluster
+# R environment — adapt the module / conda env for your cluster
 ml anaconda3/2025.06
-source activate av3env
+source activate mutation-tracking
 
 echo "Figure generation started: $(date)"
 echo "Host: $(hostname)"

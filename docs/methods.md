@@ -48,6 +48,6 @@ To further ensure data integrity, we cross-referenced our filtered dataset again
 
 ### Software and Reproducibility
 
-All analyses were performed on the Minerva high-performance computing cluster at the Icahn School of Medicine at Mount Sinai. Nextclade was executed via Apptainer (v1.3.6) containers. R scripts were run in the av3env Conda environment (Anaconda 2025.06). Code and processed data are available at [repository URL].
+All analyses were performed on the Minerva high-performance computing cluster at the Icahn School of Medicine at Mount Sinai. Nextclade was executed via Apptainer (v1.3.6) containers. R (v4.3.3) and Python (v3.10) scripts were run in a single Conda environment whose exact package set is pinned in the `environment.yml` file accompanying the code. Code and processed data are available at https://github.com/iamakhilverma/early_mutation_blitzkrieg_in_sars_cov2.
 
 ---

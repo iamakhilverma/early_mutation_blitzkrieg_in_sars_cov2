@@ -32,7 +32,7 @@ mkdir -p logs filtered_data nextclade_output processed_data
 
 ml anaconda3/2025.06
 ml apptainer/1.3.6
-source activate av3env
+source activate mutation-tracking
 
 echo "Pipeline started: $(date)"
 echo "Host: $(hostname)"

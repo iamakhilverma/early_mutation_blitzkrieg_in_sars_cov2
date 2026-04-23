@@ -2,12 +2,22 @@
 """
 Fetch COVID-19 case data and vaccination data from the OWID catalog.
 Saves raw extracts as CSVs for the mutation tracking pipeline.
+
+Usage:
+    python3 scripts/fetch_owid_data.py [out_dir]
+
+Defaults to writing into ./processed_data relative to the current working
+directory (i.e., run this from the project root).
 """
+
+import os
+import sys
 
 import pandas as pd
 from owid.catalog import search
 
-OUT_DIR = "/sc/arion/projects/Tsankov_Normal_Lung/users/akhil/projects/av/projects/mutation_tracking/processed_data"
+OUT_DIR = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.getcwd(), "processed_data")
+os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── 1. Search for COVID tables ────────────────────────────────────────────────
 print("=" * 70)
